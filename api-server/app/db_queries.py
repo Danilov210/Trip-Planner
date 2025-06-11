@@ -1,6 +1,7 @@
 import psycopg2
 from psycopg2.extras import RealDictCursor
 from app.config import STATE_DB_URL
+import bcrypt
 
 
 def get_connection():
@@ -37,3 +38,26 @@ def clear_response(request_id):
     with get_connection() as conn:
         with conn.cursor() as cur:
             cur.execute("DELETE FROM requests WHERE request_id = %s", (request_id,))
+
+
+def insert_user(username, password):
+    hashed = bcrypt.hashpw(password.encode("utf-8"), bcrypt.gensalt())
+    with get_connection() as conn:
+        with conn.cursor() as cur:
+            cur.execute(
+                """
+                INSERT INTO users (username, password_hash)
+                VALUES (%s, %s)
+                """,
+                (username, hashed.decode("utf-8")),
+            )
+
+
+def get_user_by_username(username):
+    with get_connection() as conn:
+        with conn.cursor(cursor_factory=RealDictCursor) as cur:
+            cur.execute(
+                "SELECT * FROM users WHERE username = %s",
+                (username,),
+            )
+            return cur.fetchone()

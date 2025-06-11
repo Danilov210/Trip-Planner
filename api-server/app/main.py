@@ -1,10 +1,17 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from app.routes import router
-import sys
-import os
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+app = FastAPI()
 
-app = FastAPI(title="Trip Planner API", version="0.1.0")
+# === ADD THIS CORS BLOCK ===
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],  # or ["*"] to allow any origin
+    allow_credentials=True,
+    allow_methods=["*"],  # allow GET, POST, OPTIONS, etc
+    allow_headers=["*"],  # allow all headers (Content-Type, Authorization…)
+)
+# ============================
 
 app.include_router(router)

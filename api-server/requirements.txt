@@ -3,3 +3,6 @@ uvicorn
 kafka-python
 psycopg2-binary
 python-dotenv
+bcrypt
+python-jose
+python-multipart

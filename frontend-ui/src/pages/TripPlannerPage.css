@@ -1,0 +1,377 @@
+/* src/pages/TripPlannerPage.css */
+
+.tp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 100vw;
+    min-width: 320px;
+    padding: 2vw 2vw 2vw 2vw;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+
+
+.tp-header {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 8px 16px;
+    display: flex;
+    gap: 24px;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.tp-form {
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 1.5em;
+    width: 90%;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    background: #fff;
+    border-radius: 999px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+}
+
+.tp-form label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3em;
+    font-size: 1em;
+    min-width: 240px;
+}
+
+.tp-datebox {
+    background: #f4f8ff;
+    border-radius: 999px;
+    padding: 0.4em 1.2em;
+    box-shadow: 0 1px 6px rgba(79, 140, 255, 0.07);
+    display: flex;
+    align-items: center;
+    min-width: 180px;
+    margin-top: 0.3em;
+}
+
+.tp-datebox input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    width: 100px;
+    min-width: 80px;
+    color: #222;
+}
+
+@media (max-width: 1000px) {
+    .tp-form {
+        flex-direction: column;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 2rem;
+        box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+        width: 50%;
+        max-width: 100vw;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+    }
+
+    .tp-form label {
+        min-width: 0;
+    }
+
+    .tp-search-btn {
+        margin-top: 0.5em;
+    }
+}
+
+.react-datepicker__close-icon::after {
+    color: #23272f !important;
+    /* dark text for light mode */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tp-container:not(.dark-mode) .react-datepicker__close-icon::after {
+    color: #23272f !important;
+}
+
+.tp-container.dark-mode .react-datepicker__close-icon::after {
+    color: #fff !important;
+    /* white text for dark mode */
+}
+
+.tp-form input {
+    margin-top: 0.25rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+}
+
+
+
+.tp-form button {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.leaflet-container {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 250px;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.10);
+}
+
+.react-datepicker-popper {
+    z-index: 5 !important;
+}
+
+
+
+.tp-map-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    /* or any max you want */
+    min-width: 260px;
+    aspect-ratio: 16 / 9;
+    /* This keeps the 16:9 ratio */
+    margin: 4em auto 2em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 600px) {
+
+
+    .tp-map-wrapper {
+        max-width: 100vw;
+        min-width: 0;
+        padding: 1em;
+    }
+
+    .tp-container {
+        padding: 0.5em;
+    }
+}
+
+
+.tp-loading-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg,
+            rgba(255, 255, 255, 0.5),
+            rgba(200, 200, 200, 0.3),
+            rgba(255, 255, 255, 0.5));
+    background-size: 200% 200%;
+    animation: tp-shimmer 2s infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+}
+
+.tp-spinner {
+    width: 48px;
+    height: 48px;
+    border: 4px solid #888;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: tp-spin 1s linear infinite;
+}
+
+@keyframes tp-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes tp-shimmer {
+    0% {
+        background-position: 0% 100%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+.tp-schedule {
+    max-height: 35vh;
+    overflow-y: auto;
+    background: #fafafa;
+    padding: 16px;
+}
+
+.tp-day {
+    margin-bottom: 24px;
+}
+
+.tp-day img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.tp-search-btn {
+    background: linear-gradient(90deg, #4f8cff 0%, #38d39f 100%);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 0.75em 2em;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(79, 140, 255, 0.15);
+    transition: background 0.2s, transform 0.2s;
+    margin-top: 1em;
+}
+
+.tp-search-btn:hover,
+.tp-search-btn:focus {
+    background: linear-gradient(90deg, #38d39f 0%, #4f8cff 100%);
+    transform: translateY(-2px) scale(1.04);
+    outline: none;
+}
+
+
+
+body.dark-mode,
+.tp-container.dark-mode {
+    background: #181a1b !important;
+    color: #f1f1f1 !important;
+}
+
+.tp-container.dark-mode {
+    background: #23272f !important;
+}
+
+.tp-form.dark-mode {
+    background: #23272f !important;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.5);
+}
+
+.tp-form.dark-mode label {
+    color: #f1f1f1;
+}
+
+.tp-datebox.dark-mode {
+    background: #23272f;
+    color: #f1f1f1;
+}
+
+.tp-form.dark-mode input,
+.tp-datebox.dark-mode input {
+    background: #23272f;
+    color: #f1f1f1;
+    border: 1px solid #444;
+}
+
+.tp-search-btn.dark-mode {
+    background: linear-gradient(90deg, #222 0%, #444 100%);
+    color: #fff;
+}
+
+.tp-header.dark-mode {
+    background: #23272f !important;
+    color: #f1f1f1 !important;
+}
+
+.tp-schedule.dark-mode {
+    background: #23272f;
+    color: #f1f1f1;
+}
+
+.react-datepicker__input-container input.dark-mode {
+    background: #23272f;
+    color: #f1f1f1;
+    border: 1px solid #444;
+}
+
+.react-datepicker__close-icon {
+    background: #4f8cff !important;
+    /* blue circle */
+    border: none !important;
+    border-radius: 50% !important;
+    width: 24px !important;
+    height: 24px !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    right: 8px !important;
+    top: 50% !important;
+    transform: translateY(-50%);
+    box-shadow: none !important;
+    cursor: pointer;
+    padding: 0 !important;
+}
+
+.react-datepicker__close-icon::after {
+    color: #fff !important;
+    /* white X */
+    font-size: 18px !important;
+    font-weight: bold !important;
+    background: none !important;
+    display: block;
+    line-height: 1;
+}
+
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle {
+    border-bottom-color: #23272f !important;
+}
+
+.react-datepicker {
+    background-color: #23272f !important;
+    color: #f1f1f1 !important;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range {
+    background-color: #4f8cff !important;
+    color: #fff !important;
+}
+
+.tp-header-title {
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    font-size: 2.5em;
+    letter-spacing: 0.04em;
+    color: #4f8cff;
+    text-shadow: 0 2px 8px rgba(79, 140, 255, 0.10), 0 1px 0 #fff;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.tp-header-title .plane-icon {
+    font-size: 1.1em;
+    margin-left: 0.4em;
+    vertical-align: middle;
+}
+
+.tp-container.dark-mode .tp-header-title {
+    color: #fff;
+    text-shadow: 0 2px 8px #4f8cff55, 0 1px 0 #23272f;
+}
