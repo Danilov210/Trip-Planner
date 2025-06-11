@@ -23,8 +23,17 @@ def process_task(message: dict):
     prompt = (
         f"Plan a trip to {destination} from {start_date} to {end_date} "
         f"with interests: {interests_str}. "
-        "Return a JSON object with a `days` array; each day has `description`, `coords` (lat/lng), and `image_url`."
+        "Return a JSON object with a `days` array; each day has `description`, `coords` (lat/lng), and `image_url`. "
+        "For each `image_url`, ONLY use a direct link to a real, publicly accessible photo in .jpg, .jpeg, or .png format "
+        "Do NOT use example.com, placeholder.com,upload.wikimedia.org, or any AI-generated or fake images. "
+        "Do NOT use links that do not end with .jpg, .jpeg, or .png. "
+        "If you cannot find a real image, leave `image_url` as an empty string."
     )
+    # prompt = (
+    #     f"Plan a trip to {destination} from {start_date} to {end_date} "
+    #     f"with interests: {interests_str}. "
+    #     "Return a JSON object with a `days` array; each day has `description`, `coords` (lat/lng), and `image_url`."
+    # )
     plan_text = fetch_plan_from_openai(prompt)
     print(f"📤 OpenAI response for {request_id}:\n{plan_text}")
     # 2) Parse it

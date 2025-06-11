@@ -48,3 +48,25 @@ export async function signup(username, password) {
     });
     return res.json();
 }
+
+export async function getHistory(token) {
+    const res = await fetch(`${API_URL}/history`, {
+        headers: {
+            "Authorization": "Bearer " + token
+        }
+    });
+    return res.json();
+}
+
+export async function findUserTrip(trip, token) {
+    const res = await fetch(`${API_URL}/find_trip`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Authorization": "Bearer " + token
+        },
+        body: JSON.stringify(trip)
+    });
+    if (!res.ok) throw new Error("Trip not found");
+    return res.json();
+}

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './LoginPage.css';
-import { login, signup, submitTrip } from "../api"; // <-- import your API functions
+import { login, signup, getHistory } from "../api"; // <-- import your API functions
 
 export default function LoginPage({ setUser }) {
     const [formType, setFormType] = useState(null); // null, "login", or "signup"
@@ -22,10 +22,14 @@ export default function LoginPage({ setUser }) {
             return;
         }
         login(username, password)
-            .then(data => {
+            .then(async data => {
                 if (data.status === "success") {
                     setError("");
                     setUser({ name: username.trim(), token: data.access_token });
+                    // Fetch history after login
+                    const historyData = await getHistory(data.access_token);
+                    // Do something with historyData, e.g. save to context or state
+                    console.log("User history after login:", historyData);
                 } else {
                     setError(data.message || "Login failed.");
                 }

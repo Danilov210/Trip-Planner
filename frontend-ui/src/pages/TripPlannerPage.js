@@ -1,7 +1,7 @@
 // src/pages/TripPlannerPage.js
 import React, { useState, useEffect, useRef } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import { submitTrip, getStatus } from '../api';
+import { submitTrip, getStatus, getHistory, findUserTrip } from '../api';
 import { format } from "date-fns";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -33,10 +33,6 @@ export default function TripPlannerPage({ user, setUser }) {
     // form state
     const [showInterestDropdown, setShowInterestDropdown] = useState(false);
     const [showTrips, setShowTrips] = useState(false);
-    const mockTrips = [
-        { country: "Israel", dates: "06/08–08/08" },
-        { country: "Spain", dates: "13/08–18/08" }
-    ];
     const [darkMode, setDarkMode] = useState(false);
     const today = new Date();
     const [startLocation, setStartLocation] = useState('');
@@ -51,17 +47,28 @@ export default function TripPlannerPage({ user, setUser }) {
     const interestRef = useRef();
     const [open, setOpen] = useState(false);
     const ref = useRef();
+    const [history, setHistory] = useState([]);
 
     // poll for status
     useEffect(() => {
         if (!requestId) return;
         setLoading(true);
         const interval = setInterval(async () => {
-            const res = await getStatus(requestId);
-            if (res.status === 'done' || res.days) {
+            try {
+                const res = await getStatus(requestId);
+                console.log("Polling getStatus response:", res);
+                if (res.status === 'done' || res.days) {
+                    clearInterval(interval);
+                    setPlan(res);
+                    setLoading(false);
+                    // Fetch history now, after trip is saved
+                    const historyData = await getHistory(user.token);
+                    setHistory(historyData.history || []);
+                }
+            } catch (e) {
                 clearInterval(interval);
-                setPlan(res);
                 setLoading(false);
+                alert("Failed to fetch trip status. Please try again.");
             }
         }, 1000);
         return () => clearInterval(interval);
@@ -84,24 +91,47 @@ export default function TripPlannerPage({ user, setUser }) {
         };
     }, [showInterestDropdown]);
 
+    // Fetch history on mount or when user changes
+    useEffect(() => {
+        if (user?.token) {
+            getHistory(user.token).then(data => {
+                setHistory(data.history || []);
+            });
+        }
+    }, [user]);
+
     function toggleDarkMode() {
         setDarkMode((prev) => !prev);
         document.body.classList.toggle('dark-mode', !darkMode);
     }
     function handleSubmit(e) {
         e.preventDefault();
-        const list = interests
-            .split(',')
-            .map((s) => s.trim())
-            .filter(Boolean);
+        const list = selectedInterests;
+        const formattedStart = startDate ? format(startDate, "yyyy-MM-dd") : "";
+        const formattedEnd = endDate ? format(endDate, "yyyy-MM-dd") : "";
         setLoading(true);
         submitTrip({
             start_location: startLocation,
-            start_date: startDate,
-            end_date: endDate,
+            start_date: formattedStart,
+            end_date: formattedEnd,
             interests: list,
-        }, user.token).then(({ request_id }) => {
-            setRequestId(request_id);
+        }, user.token).then(async (res) => {
+            console.log("submitTrip response:", res); // <-- Add this line
+
+            if (res.status === "done" && res.trip) {
+                // Trip already exists, show it immediately
+                setPlan(res.trip);
+                setLoading(false);
+                // Refresh history
+                const historyData = await getHistory(user.token);
+                setHistory(historyData.history || []);
+            } else if (res.status === "submitted" && res.request_id) {
+                setRequestId(res.request_id);
+                // The polling effect will handle plan/history update
+            } else {
+                setLoading(false);
+                // Optionally show an error
+            }
         });
     }
 
@@ -191,10 +221,33 @@ export default function TripPlannerPage({ user, setUser }) {
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        {mockTrips.map((trip, idx) => (
-                                            <tr key={idx}>
-                                                <td>{trip.country}</td>
-                                                <td>{trip.dates}</td>
+                                        {history.map((trip, idx) => (
+                                            <tr
+                                                key={trip.trip_id || idx}
+                                                style={{ cursor: "pointer" }}
+                                                onClick={async () => {
+                                                    setLoading(true);
+                                                    try {
+                                                        const req = {
+                                                            start_location: trip.destination,
+                                                            start_date: trip.start_date,
+                                                            end_date: trip.end_date,
+                                                            interests: trip.interests,
+                                                        };
+                                                        const res = await findUserTrip(req, user.token);
+                                                        setPlan(res.raw_plan);
+                                                    } catch (e) {
+                                                        alert("Could not load trip details.");
+                                                    }
+                                                    setLoading(false);
+                                                }}
+                                            >
+                                                <td>{trip.destination}</td>
+                                                <td>
+                                                    {formatDisplayDate(trip.start_date)}
+                                                    {trip.end_date ? <>–{formatDisplayDate(trip.end_date)}</> : ""}
+                                                </td>
+                                                <td>{trip.interests && trip.interests.join(", ")}</td>
                                             </tr>
                                         ))}
                                     </tbody>
@@ -442,6 +495,13 @@ export default function TripPlannerPage({ user, setUser }) {
                     </div>
                 )
             }
+            {plan && (
+                <div>
+                    <h2>Trip Plan</h2>
+                    {/* Render your plan details here, for example: */}
+                    <pre>{JSON.stringify(plan, null, 2)}</pre>
+                </div>
+            )}
         </div >
     );
 }

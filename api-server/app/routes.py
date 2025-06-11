@@ -1,5 +1,6 @@
 from fastapi import APIRouter, HTTPException, Request, Depends, status
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from fastapi import BackgroundTasks
 from datetime import datetime, timedelta
 from typing import List
 from app.kafka_producer import send_to_kafka
@@ -9,6 +10,10 @@ from app.db_queries import (
     get_request_by_id,
     insert_user,
     get_user_by_username,
+    save_trip_to_history,
+    get_user_id_by_username,
+    get_user_history,
+    find_existing_trip,
 )
 from pydantic import BaseModel, Field
 from shared.config import KAFKA_TOPIC
@@ -56,8 +61,27 @@ def get_current_user(token: str = Depends(oauth2_scheme)):
 @router.post("/submit")
 async def submit_trip(trip: TripRequest, current_user: str = Depends(get_current_user)):
     request_id = str(uuid.uuid4())
-    user_id = current_user  # Use the username from the token
+    user_id = get_user_id_by_username(current_user)
+    if user_id is None:
+        raise HTTPException(status_code=400, detail="User not found")
 
+    # Check for existing trip in user's history
+    existing_trip = find_existing_trip(
+        user_id,
+        trip.start_location,
+        trip.start_date,
+        trip.end_date,
+        trip.interests,
+    )
+    if existing_trip:
+        # Return the existing trip immediately, do not send to Kafka
+        return {
+            "status": "done",
+            "trip": existing_trip,
+            "message": "Trip already exists in your history.",
+        }
+
+    # No existing trip, proceed as normal
     insert_request(request_id, user_id, trip.model_dump_json())
 
     payload = {
@@ -73,7 +97,7 @@ async def submit_trip(trip: TripRequest, current_user: str = Depends(get_current
 
 
 @router.get("/status/{request_id}")
-async def get_status(request_id: str):
+async def get_status(request_id: str, background_tasks: BackgroundTasks):
     row = get_request_by_id(request_id)
     if not row:
         raise HTTPException(404)
@@ -81,7 +105,20 @@ async def get_status(request_id: str):
         return {"status": row["status"]}
     result = row["result"]
     parsed = result if isinstance(result, dict) else json.loads(result)
-    # clear_response(request_id)
+
+    # Parse payload JSON string to dict
+    trip_request = row["payload"]
+    if isinstance(trip_request, str):
+        trip_request = json.loads(trip_request)
+
+    background_tasks.add_task(
+        save_trip_to_history,
+        user_id=row["user_id"],
+        trip_data=trip_request,
+        parsed=parsed,
+    )
+    background_tasks.add_task(clear_response, request_id)
+
     return parsed
 
 
@@ -110,6 +147,34 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends()):
             "message": f"Logged in as {form_data.username}",
         }
     return {"status": "error", "message": "Invalid credentials"}
+
+
+@router.get("/history")
+async def get_history(current_user: str = Depends(get_current_user)):
+    user_id = get_user_id_by_username(current_user)
+    if user_id is None:
+        raise HTTPException(status_code=400, detail="User not found")
+    history = get_user_history(user_id)
+    return {"history": history}
+
+
+@router.post("/find_trip")
+async def find_user_trip(
+    trip: TripRequest, current_user: str = Depends(get_current_user)
+):
+    user_id = get_user_id_by_username(current_user)
+    if user_id is None:
+        raise HTTPException(status_code=400, detail="User not found")
+    raw_plan = find_existing_trip(
+        user_id,
+        trip.start_location,
+        trip.start_date,
+        trip.end_date,
+        trip.interests,
+    )
+    if not raw_plan:
+        raise HTTPException(status_code=404, detail="Trip not found")
+    return {"raw_plan": raw_plan}
 
 
 def create_access_token(data: dict, expires_delta: timedelta = None):
