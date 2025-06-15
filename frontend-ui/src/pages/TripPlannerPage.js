@@ -2,6 +2,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { submitTrip, getStatus, getHistory, findUserTrip } from '../api';
+import { Polyline, useMap } from 'react-leaflet';
+import polyline from '@mapbox/polyline';
 import { format } from "date-fns";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -29,6 +31,9 @@ const INTEREST_OPTIONS = [
     "Shopping"
 ];
 
+
+
+
 export default function TripPlannerPage({ user, setUser }) {
     // form state
     const [showInterestDropdown, setShowInterestDropdown] = useState(false);
@@ -48,6 +53,30 @@ export default function TripPlannerPage({ user, setUser }) {
     const [open, setOpen] = useState(false);
     const ref = useRef();
     const [history, setHistory] = useState([]);
+
+    function FitBoundsToPolyline({ points }) {
+        const map = useMap();
+        useEffect(() => {
+            if (points.length > 0) {
+                const latLngs = points.map(([lat, lng]) => L.latLng(lat, lng));
+                const bounds = L.latLngBounds(latLngs);
+                map.fitBounds(bounds);
+            }
+        }, [points]);
+        return null;
+    }
+
+
+    useEffect(() => {
+        if (plan?.google_route?.routes?.[0]) {
+            const route = plan.google_route.routes[0];
+            console.log("🧭 Overview polyline:", route.overview_polyline);
+            console.log("🪜 Steps polylines:");
+            route.legs?.[0]?.steps?.forEach((step, i) => {
+                console.log(`Step ${i + 1}:`, step.polyline?.points);
+            });
+        }
+    }, [plan]);
 
     // poll for status
     useEffect(() => {
@@ -143,10 +172,12 @@ export default function TripPlannerPage({ user, setUser }) {
             return date;
         }
     }
-    // map center: if we have days, center first day's coord; else world view
-    const center = plan?.days?.[0]?.coords
-        ? [plan.days[0].coords.lat, plan.days[0].coords.lng]
-        : [20, 0]; // lat,lng for a “world” view
+    const validDays = plan?.days?.filter(d => d.coords?.lat != null) || [];
+
+    // center on the first valid day (or fallback to world view)
+    const center = validDays.length > 0
+        ? [validDays[0].coords.lat, validDays[0].coords.lng]
+        : [20, 0];
 
     return (
         <div className={`tp-container${darkMode ? " dark-mode" : ""}`}>
@@ -306,87 +337,101 @@ export default function TripPlannerPage({ user, setUser }) {
                             required
                         />
                     </label>
+
                     <label>
                         📅 When is your trip?
                         <DatePicker
                             selectsRange
                             startDate={startDate}
                             endDate={endDate}
-                            onChange={(update) => {
-                                setDateRange(update);
-                                if (update[0] && update[1]) {
-                                    setTimeout(() => document.activeElement.blur(), 0); // closes calendar after 2nd date
+                            open={calendarOpen}
+                            onClickOutside={() => setCalendarOpen(true)}
+                            onSelect={() => {
+                                // every selection moment: if both are chosen, close
+                                if (startDate && endDate) {
+                                    setCalendarOpen(false);
                                 }
                             }}
-                            shouldCloseOnSelect={true}
-                            isClearable={true}
-                            required
+                            onChange={(update) => {
+                                setDateRange(update);
+                                const [start, end] = update;
+                                // once both dates are set, close the calendar
+                                if (start && end) {
+                                    setCalendarOpen(false);
+                                }
+                            }}
                             placeholderText="Select trip dates"
                             dateFormat="dd-MM"
                             minDate={today}
+                            isClearable
                             withPortal
+                            onInputClick={() => setCalendarOpen(true)}
                         />
                     </label>
-                    <div style={{ position: "relative", width: "100%" }}>
-                        {/* Field label */}
-                        <label
-                            style={{
-                                display: "block",
-                                marginBottom: "0.5em",
-                                fontSize: "1em",
-                            }}
-                        >
-                            🎯 What are you into?
-                        </label>
-
-                        {/* The “input‐looking” div you click to open/close */}
-                        <div
-                            ref={interestRef}
-                            onClick={e => {
-                                if (e.target === e.currentTarget) setShowInterestDropdown(v => !v);
-                            }}
-                            tabIndex={0}
-                            style={{
-                                width: "100%",
-                                height: "40px",
-                                borderRadius: "8px",
-                                border: "1px solid #ccc",
-                                padding: "0 0.75em",
-                                fontSize: "1em",
-                                background: "#fff",
-                                cursor: "pointer",
-                                display: "flex",
-                                alignItems: "center",
-                                boxSizing: "border-box",
-                                color: selectedInterests.length === 0 ? "#888" : "#23272f",
-                            }}
-                        >
-                            {selectedInterests.length === 0
-                                ? <span style={{ color: "#888" }}>Select your interests</span>
-                                : selectedInterests.join(", ")}
-                            <span style={{ marginLeft: "auto", color: "#bbb" }}>▼</span>
+                    <label ref={interestRef} style={{ display: "block", width: "100%" }}>
+                        🎯 What are you into?
+                        <div style={{ display: "flex", justifyContent: "flex-start" }}>
+                            <div
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    setTimeout(() => setShowInterestDropdown(v => !v), 0);
+                                }}
+                                style={{
+                                    width: "100%", // ✅ Make this match exactly your desired visual width
+                                    maxWidth: "300px", // ✅ Add max width to contain it visually
+                                    height: "35px",
+                                    borderRadius: "8px",
+                                    border: "1px solid #ccc",
+                                    padding: "0 .75em",
+                                    display: "flex",
+                                    alignItems: "center",
+                                    marginTop: "0.5em",
+                                    cursor: "pointer",
+                                    userSelect: "none",
+                                    background: darkMode ? "#23272f" : "#fff",
+                                    color:
+                                        selectedInterests.length === 0
+                                            ? "#888"
+                                            : darkMode
+                                                ? "#fff"
+                                                : "#23272f",
+                                }}
+                            >
+                                {selectedInterests.length
+                                    ? selectedInterests.join(", ")
+                                    : "Select your interests"}
+                                <span style={{ marginLeft: "auto" }}>▼</span>
+                            </div>
                         </div>
 
-                        {/* The dropdown itself */}
                         {showInterestDropdown && (
                             <div
                                 style={{
                                     position: "absolute",
-                                    top: "100%",
-                                    left: 0,
-                                    width: "100%",
-                                    background: "#fff",
+                                    width: "21%",
+                                    background: darkMode ? "#23272f" : "#fff",
                                     border: "1px solid #4f8cff",
                                     borderRadius: "8px",
-                                    boxShadow: "0 2px 8px rgba(79,140,255,0.10)",
+                                    boxShadow: "0 2px 8px rgba(79,140,255,0.1)",
                                     zIndex: 20,
-                                    marginTop: "0.25em",
-                                    padding: "0.5em 0",
+                                    marginTop: ".25em",
+                                    padding: ".5em 0",
                                 }}
-                                onClick={e => e.stopPropagation()} // prevent clicks here from closing
                             >
                                 {INTEREST_OPTIONS.map(option => {
                                     const id = `interest-${option}`;
+                                    const isChecked = selectedInterests.includes(option);
+                                    const isDisabled = selectedInterests.length === 6 && !isChecked;
+
+                                    const handleToggle = () => {
+                                        if (isDisabled) return;
+                                        if (isChecked) {
+                                            setSelectedInterests(selectedInterests.filter(i => i !== option));
+                                        } else {
+                                            setSelectedInterests([...selectedInterests, option]);
+                                        }
+                                    };
+
                                     return (
                                         <div
                                             key={option}
@@ -396,80 +441,97 @@ export default function TripPlannerPage({ user, setUser }) {
                                                 alignItems: "center",
                                                 padding: "0.25em 1em",
                                                 gap: "0.5em",
-                                                cursor:
-                                                    selectedInterests.length === 6 && !selectedInterests.includes(option)
-                                                        ? "not-allowed"
-                                                        : "pointer",
+                                                cursor: isDisabled ? "not-allowed" : "pointer",
+                                                backgroundColor: isChecked ? (darkMode ? "#3a3f4a" : "#f0f8ff") : "transparent",
+                                                transition: "background-color 0.2s ease",
                                             }}
                                         >
-                                            {/* actual checkbox */}
                                             <input
                                                 id={id}
                                                 type="checkbox"
-                                                checked={selectedInterests.includes(option)}
-                                                disabled={
-                                                    selectedInterests.length === 6 && !selectedInterests.includes(option)
-                                                }
-                                                onChange={e => {
-                                                    if (e.target.checked) {
-                                                        setSelectedInterests(prev =>
-                                                            prev.length < 6 ? [...prev, option] : prev
-                                                        );
-                                                    } else {
-                                                        setSelectedInterests(prev =>
-                                                            prev.filter(i => i !== option)
-                                                        );
-                                                    }
-                                                }}
+                                                checked={isChecked}
+                                                disabled={isDisabled}
+                                                onChange={handleToggle}
                                                 style={{
                                                     margin: 0,
-                                                    marginRight: "0.5em",
+                                                    cursor: isDisabled ? "not-allowed" : "pointer"
                                                 }}
                                             />
-                                            {/* label linked to checkbox */}
                                             <label
                                                 htmlFor={id}
-                                                style={{ userSelect: "none" }}
+                                                style={{
+                                                    userSelect: "none",
+                                                    cursor: isDisabled ? "not-allowed" : "pointer"
+                                                }}
                                             >
                                                 {option}
                                             </label>
                                         </div>
                                     );
                                 })}
+
                                 {selectedInterests.length === 6 && (
-                                    <div style={{ color: "#4f8cff", fontSize: "0.95em", padding: "0.5em 1em" }}>
+                                    <div
+                                        style={{
+                                            color: "#4f8cff",
+                                            fontSize: ".95em",
+                                            padding: ".5em 1em",
+                                        }}
+                                    >
                                         You can select up to 6 interests.
                                     </div>
                                 )}
                             </div>
                         )}
-                    </div>
+                    </label>
+
+
                     <button type="submit" className="tp-search-btn">Search</button>
                 </form>
             )}
 
             {/* leaflet map */}
             <div className="tp-map-wrapper">
-                <MapContainer
-                    center={center}
-                    zoom={plan ? 12 : 2}
-                    style={{ height: '100%', width: '100%' }}
-                >
+                <MapContainer center={center} zoom={plan ? 12 : 2} style={{ height: '100%', width: '100%' }}>
                     <TileLayer
                         attribution='&copy; <a href="https://osm.org/">OpenStreetMap</a> contributors'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
-                    {plan?.days?.map((d, i) => (
+
+                    {validDays.map((d, i) => (
                         <Marker
                             key={i}
                             position={[d.coords.lat, d.coords.lng]}
                         >
                             <Popup>
-                                <strong>Day {i + 1}</strong><br />
+                                <strong>Day {d.day || i + 1}</strong><br />
                                 {d.description}
                             </Popup>
                         </Marker>
                     ))}
+
+                    {/* ✅ Big red trip route */}
+                    {plan?.google_route?.routes?.[0] && (() => {
+                        const steps = plan.google_route.routes[0].legs?.[0]?.steps || [];
+                        const decoded = steps.flatMap(step => polyline.decode(step.polyline.points));
+                        if (decoded.length > 1) {
+                            return (
+                                <>
+                                    <Polyline
+                                        positions={decoded}
+                                        pathOptions={{
+                                            color: 'red',
+                                            weight: 8,
+                                            opacity: 0.9,
+                                        }}
+                                    />
+                                    <FitBoundsToPolyline points={decoded} />
+                                </>
+                            );
+                        }
+                        return null;
+                    })()}
+
                 </MapContainer>
 
                 {/* loading overlay */}
@@ -482,26 +544,18 @@ export default function TripPlannerPage({ user, setUser }) {
 
 
             {/* schedule & images */}
-            {
-                plan?.days && (
-                    <div className="tp-schedule">
-                        {plan.days.map((day, i) => (
-                            <div key={i} className="tp-day">
-                                <h2>Day {i + 1}</h2>
-                                <img src={day.image_url} alt={`Day ${i + 1}`} />
-                                <p>{day.description}</p>
-                            </div>
-                        ))}
-                    </div>
-                )
-            }
-            {plan && (
-                <div>
-                    <h2>Trip Plan</h2>
-                    {/* Render your plan details here, for example: */}
-                    <pre>{JSON.stringify(plan, null, 2)}</pre>
+            {plan?.days && (
+                <div className={`tp-schedule${darkMode ? " dark" : ""}`}>
+                    {plan.days.map((day, i) => (
+                        <div key={i} className="tp-day">
+                            <h2>Day {i + 1}</h2>
+                            <img src={day.image_url} alt={day.description} />
+                            <p>{day.description}</p>
+                        </div>
+                    ))}
                 </div>
             )}
+
         </div >
     );
 }

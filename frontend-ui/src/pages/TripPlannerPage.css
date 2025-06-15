@@ -375,3 +375,79 @@ body.dark-mode,
     color: #fff;
     text-shadow: 0 2px 8px #4f8cff55, 0 1px 0 #23272f;
 }
+
+.tp-form .react-datepicker-wrapper {
+    min-width: 240px;
+}
+
+.tp-select-box {
+    position: relative;
+    min-width: 200px;
+    height: 35px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 0 0.75em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background: #fff;
+    /* switch in dark mode if needed */
+}
+
+.tp-select-box+.tp-select-box-dropdown {
+    width: 100%;
+}
+
+
+.tp-trip-plan {
+    background: #fff;
+    color: #23272f;
+    padding: 1em;
+    border-radius: 12px;
+    margin-top: 2em;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.tp-trip-plan.dark {
+    background: #23272f;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+}
+
+
+.tp-schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin-top: 2em;
+    padding: 1em;
+    background: #fff;
+    color: #23272f;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.tp-schedule.dark {
+    background: #23272f;
+    color: #fff;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
+}
+
+.tp-day h2,
+.tp-day p {
+    margin: 0.5em 0;
+}
+
+.tp-day img {
+    width: 100%;
+    border-radius: 8px;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.tp-day {
+    background: inherit;
+    color: inherit;
+}
