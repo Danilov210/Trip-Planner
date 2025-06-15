@@ -31,16 +31,19 @@ def process_task(message: dict):
     prompt = (
         f"Plan a trip to {destination} from {start_date} to {end_date} "
         f"with interests: {interests_str}. "
-        "Return a JSON object with a `days` array; each day has:\n"
-        "  • `description`: string (what you’ll do that day),\n"
-        "  • `place_name`: string (the specific location or attraction name),\n"
-        "  • `coords`: { lat: number, lng: number },\n"
-        "  • `image_url`: string (direct .jpg/.jpeg/.png link or empty string).\n"
+        "Return a JSON object with a `days` array; each day should have three entries:\n"
+        "  • `morning`, `noon`, `evening`: each an object with:\n"
+        "      – `description`: string (what to do),\n"
+        "      – `place_name`: string (specific attraction or spot),\n"
+        "      – `coords`: { lat: number, lng: number },\n"
+        "      – `image_url`: string (direct .jpg/.jpeg/.png link or empty string).\n"
+        "**The recommendations should be based primarily on the location’s most popular, iconic, or unique attractions, not strictly limited by user interests.** "
+        "If relevant, interests may help prioritize, but do not omit key location-based highlights even if unrelated to interests.\n"
         "For each `image_url`, ONLY use a direct link to a real, publicly accessible "
         "photo in .jpg, .jpeg, or .png format. Do NOT use example.com, placeholder.com, "
-        "upload.wikimedia.org, or any AI-generated/fake images. "
-        "Do NOT use links that do not end with .jpg, .jpeg, or .png. "
-        "If you cannot find a real image, leave `image_url` as an empty string."
+        "upload.wikimedia.org, or any AI-generated/fake images. Do NOT use links that "
+        "do not end with .jpg, .jpeg, or .png. If you cannot find a real image, leave "
+        "`image_url` as an empty string."
     )
     plan_text = fetch_plan_from_openai(prompt)
     print(f"📤 OpenAI response for {request_id}:\n{plan_text}")
@@ -77,21 +80,21 @@ def process_task(message: dict):
         plan["google_route"] = None
 
     # 4) Enrich days: replace any Wikimedia URL via Google Places Photos
-    for day in plan.get("days", []):
-        url = day.get("image_url", "")
-        # only try to replace if it's actually a Wikimedia URL
-        if url.startswith("https://upload.wikimedia.org"):
-            # use the explicit place_name (falls back to the trip destination)
-            place_query = day.get("place_name", destination)
-            print(f"🔄 Replacing Wikimedia image for landmark `{place_query}`")
 
-            # fetch a real photo URL
+    for day in plan.get("days", []):
+        for slot in ("morning", "noon", "evening"):
+            entry = day.get(slot)
+            if not entry:
+                continue
+
+            # use the slot’s place_name (or fall back to destination)
+            place_query = entry.get("place_name", destination)
+            print(f"🔄 Replacing image for {slot} at `{place_query}`")
+
+            # fetch a real photo URL (or empty string)
             new_url = get_google_place_photo(place_query) or ""
-            day["image_url"] = new_url
+            entry["image_url"] = new_url
             print(f"   → got: {new_url}")
-        else:
-            # leave everything else untouched
-            print(f"ℹ️  Skipping non-Wikimedia URL: {url}")
 
     # 5) Persist to DB
     with psycopg2.connect(STATE_DB_URL) as conn:

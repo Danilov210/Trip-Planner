@@ -1,0 +1,2975 @@
+{
+    "days": [
+        {
+            "noon": {
+                "coords": {
+                    "lat": 52.5055,
+                    "lng": 13.3731
+                },
+                "image_url": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrGMDyjQFRgHgj1N6BKUqAkhd7NQYfQ0cmpNgnxog_HRXmNKGsGhUnZcGO-pIj23jlXfY9XURZYPReSw3vqTFWISfQkzideG_oAUJgoWATTy9VPXO6wqKL315YhcYyLSrlT6dIU=s1600-w800",
+                "place_name": "KaDeWe",
+                "description": "Visit the KaDeWe (Kaufhaus des Westens), Europe's largest department store, for shopping and dining."
+            },
+            "evening": {
+                "coords": {
+                    "lat": 52.5311,
+                    "lng": 13.4014
+                },
+                "image_url": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nofn72A1BHx_uIqXkI8xAuSpVNcE1MhWnvmPp3Pf7ZMXdBmItcHAkN9iTdi4r_cNmyj6QfBGg0jFhiPkINR4c9vfxYeJYoVTButjqy9rbjz9k157jpjTsENRpruassmTGpwxsBclQ=s1600-w800",
+                "place_name": "Hackescher Markt",
+                "description": "Relax and have dinner at the historic Hackescher Markt, a vibrant area filled with shops and restaurants."
+            },
+            "morning": {
+                "coords": {
+                    "lat": 52.5074,
+                    "lng": 13.3312
+                },
+                "image_url": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nq0IayGGD29HhiCfoxQCAj7Arcf5QFNRr5uCAfLAR4qzWnSRRQH6rCa0jNfZeirny931JcxWzKOTETLS2Ov8HzR27IpAvL73exDdi1IEX35I_BJtC6jJekP4YIWqqU27f4JcM8eWA=s1600-w800",
+                "place_name": "Kurfürstendamm",
+                "description": "Explore the famous shopping district of Kurfürstendamm, known for its luxury boutiques and designer stores."
+            },
+            "additional_recommendations": [
+                "Visit the Berlin Wall Memorial to learn about the city's history.",
+                "Take a stroll through Tiergarten park for some fresh air.",
+                "Check out the street art in the nearby neighborhoods."
+            ]
+        },
+        {
+            "noon": {
+                "coords": {
+                    "lat": 52.5325,
+                    "lng": 13.4383
+                },
+                "image_url": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrTxN6YwUgC1Y2unZTbSgF7idwvIATRRW1zKygHSlEuYFs7FAg0-NZZUZ1Apey_SsVR707iks3sfozsM9tSQA3oB09mnLfXAd5klcpY1VLaXE3IgoCWkZh2WQMry6rzZkeX3AXOBQ=s1600-w800",
+                "place_name": "Kollwitzplatz",
+                "description": "Enjoy lunch at a local café and browse the stalls at Kollwitzplatz market."
+            },
+            "evening": {
+                "coords": {
+                    "lat": 52.5138,
+                    "lng": 13.3921
+                },
+                "image_url": "https://lh3.googleusercontent.com/places/ANXAkqE0gfgQQaTXhMD-bemNXTNrF6gWLOpF4voRM8IzEmNU7yUNNo-ruWXt-0e0ILQSFfJwIRmE5HcbjCDH_G1rIp6q3v3GFJ5aA48=s1600-w800",
+                "place_name": "Gendarmenmarkt",
+                "description": "Visit the beautiful Gendarmenmarkt square, famous for its stunning architecture."
+            },
+            "morning": {
+                "coords": {
+                    "lat": 52.5294,
+                    "lng": 13.429
+                },
+                "image_url": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrYdMHwd_uc2nnLj_W7qlnFtq_wUIKvws9sYGZZf700u-FoU6wHoGf9_MuZuXIL5jJe4qWnOJQCmT-6mpiDlbD-2F9RjN-1qC50Tg9LhrIqdfpAqcfYnZYJSLYO_YkeCBH8fjkZSA=s1600-w800",
+                "place_name": "Prenzlauer Berg",
+                "description": "Head to Prenzlauer Berg for unique boutiques and vintage shops."
+            },
+            "additional_recommendations": [
+                "Explore the Berlin Cathedral for its impressive architecture.",
+                "Take a boat tour on the Spree River for a different view of the city.",
+                "Enjoy an evening at a local beer garden."
+            ]
+        },
+        {
+            "noon": {
+                "coords": {
+                    "lat": 52.5076,
+                    "lng": 13.3882
+                },
+                "image_url": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4norlVnpxgyJaTQPoLcIfFrbUvaF41c27FNrZXNqZCYYk9kY4gGTgcb5erxBx208RYzMEkvmF820rTtoxiQWjfS1nCeSKaRy3J0FSz4RiW1PtSuxd9JPBC_1tOQ-WSxEatOIgYRsAw=s1600-w800",
+                "place_name": "Mall of Berlin",
+                "description": "Explore the shops and boutiques in the Mall of Berlin, a large shopping center."
+            },
+            "evening": {
+                "coords": {
+                    "lat": 52.511,
+                    "lng": 13.424
+                },
+                "image_url": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nouV3O63vZRrWZR7KXgjOXfIhPgIUTO4EG-3Kwsl0oHVqzc8Pj1wWeWO-6bUX8Kgpl2_1RSucER9w6zo_Nq-vsga05z_D_Tmwk80I7PqWGb-bXpkBC1AZK1n1nJnVrvEvP9Px4V=s1600-w800",
+                "place_name": "Spreeufer",
+                "description": "Dinner at a restaurant overlooking the Spree River, enjoying the view."
+            },
+            "morning": {
+                "coords": {
+                    "lat": 52.5219,
+                    "lng": 13.4134
+                },
+                "image_url": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noor8BvPXnqOwLwIEJkjcPgqASqklzaHXH_aWbY8WHks33iHIt83dsq_EEqKXDzC1mvPTBkjpgiZzzTTb22nkp_mXZZ6h26Ie5zxBknkFpAwT-r2NGQE-vkU89hs6NDWElH74X8=s1600-w800",
+                "place_name": "Alexanderplatz",
+                "description": "Visit the famous Alexanderplatz for shopping and sightseeing, featuring the iconic TV Tower."
+            },
+            "additional_recommendations": [
+                "Visit the Museum Island for a dose of culture.",
+                "Check out street performances in the area.",
+                "Relax at a nearby park."
+            ]
+        },
+        {
+            "noon": {
+                "coords": {
+                    "lat": 52.5167,
+                    "lng": 13.2902
+                },
+                "image_url": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nopHO7tc_8UqabI3fbHQDuwL1rinPMufMkeY8fWVT-ES6kKl5zBAHaGtkeNH2H0j3zB65y2ycVkBsgGJnsyv5gEVJhNi0xO9i_0yl7B05t_3Dq7LJ1DHqWoi3a0PraoWMsBmyGH=s1600-w800",
+                "place_name": "Charlottenburg District",
+                "description": "Enjoy lunch at a nearby café and explore the local shops in the area."
+            },
+            "evening": {
+                "coords": {
+                    "lat": 52.5169,
+                    "lng": 13.3883
+                },
+                "image_url": "https://lh3.googleusercontent.com/places/ANXAkqEEC6eK83cDqjcbUu28kfOJ26Q7P5gK0fadH2OQcv_pmLBFNaqCEE4yttnB3Qfm3eDJ5F0iISQwYVGqdWXU16Mgq_kz-9QT5gM=s1600-w800",
+                "place_name": "Rooftop Restaurant",
+                "description": "Wrap up your trip with dinner at a rooftop restaurant with views of the city."
+            },
+            "morning": {
+                "coords": {
+                    "lat": 52.5206,
+                    "lng": 13.2956
+                },
+                "image_url": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nq3tDWVlEijT-xG_UyiEbX6-NE79MMSUXNh9SnCwvPNayLgTuRMBuv4I0xcBC2Q8R0c2XAayhgcys8lBJS1F26KIJ06eknKvfOyihHewWgofFaZylw-MRaV3g8AVBSlLCjMtoYNew=s1600-w800",
+                "place_name": "Charlottenburg Palace",
+                "description": "Visit the Charlottenburg Palace for a blend of history and beautiful gardens."
+            },
+            "additional_recommendations": [
+                "Visit the Berlin Zoo if time allows.",
+                "Explore the local art galleries.",
+                "Take a leisurely walk along the Landwehr Canal."
+            ]
+        }
+    ],
+    "waypoints": [
+        {
+            "lat": 52.5074,
+            "lng": 13.3312
+        },
+        {
+            "lat": 52.5055,
+            "lng": 13.3731
+        },
+        {
+            "lat": 52.5311,
+            "lng": 13.4014
+        },
+        {
+            "lat": 52.5294,
+            "lng": 13.429
+        },
+        {
+            "lat": 52.5325,
+            "lng": 13.4383
+        },
+        {
+            "lat": 52.5138,
+            "lng": 13.3921
+        },
+        {
+            "lat": 52.5219,
+            "lng": 13.4134
+        },
+        {
+            "lat": 52.5076,
+            "lng": 13.3882
+        },
+        {
+            "lat": 52.511,
+            "lng": 13.424
+        },
+        {
+            "lat": 52.5206,
+            "lng": 13.2956
+        },
+        {
+            "lat": 52.5167,
+            "lng": 13.2902
+        },
+        {
+            "lat": 52.5169,
+            "lng": 13.3883
+        }
+    ],
+    "google_route": {
+        "routes": [
+            {
+                "legs": [
+                    {
+                        "steps": [
+                            {
+                                "distance": {
+                                    "text": "0.2 km",
+                                    "value": 212
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 50
+                                },
+                                "polyline": {
+                                    "points": "oin_IuyjpAECe@a@UUIEi@a@UOKGYSg@[c@]USaAu@"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5089889,
+                                    "lng": 13.3330078
+                                },
+                                "start_location": {
+                                    "lat": 52.5072762,
+                                    "lng": 13.3316267
+                                },
+                                "html_instructions": "Head <b>northeast</b> on <b>Jebensstraße</b> toward <b>Hertzallee</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.3 km",
+                                    "value": 254
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 41
+                                },
+                                "maneuver": "turn-left",
+                                "polyline": {
+                                    "points": "etn_IibkpAU|@CHId@Sz@CFCN[vAo@pCIj@Md@a@fBI\\ER"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5100564,
+                                    "lng": 13.3296946
+                                },
+                                "start_location": {
+                                    "lat": 52.5089889,
+                                    "lng": 13.3330078
+                                },
+                                "html_instructions": "Turn <b>left</b> onto <b>Hertzallee</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.3 km",
+                                    "value": 264
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 37
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "{zn_IqmjpA{AcAy@i@aAm@e@[mBoAg@[CAEAE?C@E@ED"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5122356,
+                                    "lng": 13.3311249
+                                },
+                                "start_location": {
+                                    "lat": 52.5100564,
+                                    "lng": 13.3296946
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Fasanenstraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.1 km",
+                                    "value": 115
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 21
+                                },
+                                "maneuver": "turn-left",
+                                "polyline": {
+                                    "points": "oho_IovjpAADUj@KTILKLIHUPYNMHi@R"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5130951,
+                                    "lng": 13.330253
+                                },
+                                "start_location": {
+                                    "lat": 52.5122356,
+                                    "lng": 13.3311249
+                                },
+                                "html_instructions": "Turn <b>left</b> onto <b>Müller-Breslau-Straße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "1.3 km",
+                                    "value": 1301
+                                },
+                                "duration": {
+                                    "text": "3 mins",
+                                    "value": 167
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "{mo_IaqjpA?e@Ac@GyCAYAYAa@A]AWIkDIgCGiCCeAC]Ao@GwBAUAYC[Ak@EiAIeDAUAa@Cm@Ac@Cm@?WUeHKoDKkDEoACmAAM]kLYqJ?UE{ACk@EyAAc@EaBAY?Q?G@G@KBKBIPm@DW"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.514148,
+                                    "lng": 13.3492871
+                                },
+                                "start_location": {
+                                    "lat": 52.5130951,
+                                    "lng": 13.330253
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Bundesstraße 5</b>/<wbr/><b>B2</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "1.9 km",
+                                    "value": 1901
+                                },
+                                "duration": {
+                                    "text": "3 mins",
+                                    "value": 197
+                                },
+                                "maneuver": "roundabout-right",
+                                "polyline": {
+                                    "points": "mto_IahnpATe@Ng@@MBK@M@M?M?O?M?MAKAI?KCKAICIAICICGCECGCECECECECCACAAAAAACAAAAAAAYy@ISCKCICKEOCWCYAYCa@Aw@G}BAWGuBCy@CiAa@_OA_@WmKGmBGmBUaJQ{GGoCQ{FGoCOuFMgFCsAAk@C_BCYCq@AOA]Co@Ai@AUCkAI{CIoCG{BEeB?UAWGaCCaAK_EEeBAe@"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5161515,
+                                    "lng": 13.3767369
+                                },
+                                "start_location": {
+                                    "lat": 52.514148,
+                                    "lng": 13.3492871
+                                },
+                                "html_instructions": "At <b>Großer Stern</b>, take the <b>2nd</b> exit and stay on <b>Bundesstraße 5</b>/<wbr/><b>B2</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.7 km",
+                                    "value": 697
+                                },
+                                "duration": {
+                                    "text": "2 mins",
+                                    "value": 143
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "}`p_IssspADAPM@CJOHUDKBK@G@E@?@G@EBG@ABC@CBCBCBABAHCFAB?D?H?J@D@T@rBNV?T@FBD@lAN|C`@N@VBR?H?R@`@Ab@?^?L@J@D@d@FD@\\DF@h@H\\Dh@Fn@HTDdC\\"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.51010489999999,
+                                    "lng": 13.3765704
+                                },
+                                "start_location": {
+                                    "lat": 52.5161515,
+                                    "lng": 13.3767369
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Ebertstraße</b>/<wbr/><b>B2</b><div style=\"font-size:0.9em\">Continue to follow Ebertstraße</div>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.2 km",
+                                    "value": 179
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 42
+                                },
+                                "polyline": {
+                                    "points": "c{n_IqrspARBB?B?D?FALAj@EN?PALA@?`@CBAD?DAD?DAFCFABCBABADC@ABCDCDEBCFKBCBE@?DGLO"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5085724,
+                                    "lng": 13.3770912
+                                },
+                                "start_location": {
+                                    "lat": 52.51010489999999,
+                                    "lng": 13.3765704
+                                },
+                                "html_instructions": "Continue onto <b>Potsdamer Platz</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.1 km",
+                                    "value": 101
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 23
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "qqn_IyuspALZBJLZBb@FrBB\\?H@HBF"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5083033,
+                                    "lng": 13.3757029
+                                },
+                                "start_location": {
+                                    "lat": 52.5085724,
+                                    "lng": 13.3770912
+                                },
+                                "html_instructions": "Turn <b>right</b> to stay on <b>Potsdamer Platz</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.4 km",
+                                    "value": 378
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 72
+                                },
+                                "polyline": {
+                                    "points": "{on_IcmspADDB@@@@@FBDBXPXLJFf@RTJHB`@P`@Nj@XXLt@Z`@PPH\\PjAj@`C`A"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.505085,
+                                    "lng": 13.3739292
+                                },
+                                "start_location": {
+                                    "lat": 52.5083033,
+                                    "lng": 13.3757029
+                                },
+                                "html_instructions": "<b>Potsdamer Platz</b> turns <b>left</b> and becomes <b>Linkstraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "93 m",
+                                    "value": 93
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 37
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "w{m_IabspAe@rD?BCBA@A?EAEA[M"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5055054,
+                                    "lng": 13.3730724
+                                },
+                                "start_location": {
+                                    "lat": 52.505085,
+                                    "lng": 13.3739292
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Schellingstraße</b>"
+                            }
+                        ],
+                        "distance": {
+                            "text": "5.5 km",
+                            "value": 5495
+                        },
+                        "duration": {
+                            "text": "14 mins",
+                            "value": 830
+                        },
+                        "end_address": "Eichhornstraße 3/10th Floor, 10785 Berlin, Germany",
+                        "end_location": {
+                            "lat": 52.5055054,
+                            "lng": 13.3730724
+                        },
+                        "via_waypoint": [],
+                        "start_address": "Jebensstraße 5, 10623 Berlin, Germany",
+                        "start_location": {
+                            "lat": 52.5072762,
+                            "lng": 13.3316267
+                        },
+                        "traffic_speed_entry": []
+                    },
+                    {
+                        "steps": [
+                            {
+                                "distance": {
+                                    "text": "93 m",
+                                    "value": 93
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 27
+                                },
+                                "polyline": {
+                                    "points": "m~m_Iu|rpAZLD@D@@?@ABC?Cd@sD"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.505085,
+                                    "lng": 13.3739292
+                                },
+                                "start_location": {
+                                    "lat": 52.5055054,
+                                    "lng": 13.3730724
+                                },
+                                "html_instructions": "Head <b>south</b> on <b>Schellingstraße</b> toward <b>Linkstraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.1 km",
+                                    "value": 99
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 28
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "w{m_IabspAx@^@@x@^HDFBDFBD@@LR"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5042704,
+                                    "lng": 13.3733727
+                                },
+                                "start_location": {
+                                    "lat": 52.505085,
+                                    "lng": 13.3739292
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Linkstraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.1 km",
+                                    "value": 117
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 19
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "uvm_Iq~rpAIFMNONOPKNGJILGLKRGJEJKTGNO^"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5050494,
+                                    "lng": 13.3722292
+                                },
+                                "start_location": {
+                                    "lat": 52.5042704,
+                                    "lng": 13.3733727
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Reichpietschufer</b>/<wbr/><b>B96</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "2.1 km",
+                                    "value": 2124
+                                },
+                                "duration": {
+                                    "text": "3 mins",
+                                    "value": 167
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "q{m_ImwrpAENELGGEAGCCAKAGAAAKAGAA?KCA?QCOCKCC?MC_@GC?QEe@Ga@G?Ac@Ga@EA?AAe@A_@@O@QBA?SDODo@PI@KBa@F?@a@FA?c@HA?a@F[D[D_@FE@]FC@G@E@A?e@PkATiBZA?c@JMBw@Ng@J]HC?_@FE?C@o@NQFIBQHWJA@cAd@GBeAd@YLGBa@PA?EBGDEFGJMFC?EBE@o@PMBWFE@_@Fg@F_@DM@]BM@G?}@Bk@?MA[AWA[C_@Ci@G[Gc@Iu@Qc@MUIg@QWKi@Ug@Se@UWMQIo@[}As@WOcAe@o@[e@SQGME_@IUCS?O?O?Q@YFKBIBE@SHYLOJ{@d@OJSNk@`@a@\\QLa@^w@n@_@\\w@p@a@j@]l@"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.52334949999999,
+                                    "lng": 13.3697262
+                                },
+                                "start_location": {
+                                    "lat": 52.5050494,
+                                    "lng": 13.3722292
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>B96</b> (signs for <b>Prenzlauer Berg</b>/<wbr/><b>Wedding</b>/<wbr/><b>Hauptbahnhof</b>)"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.3 km",
+                                    "value": 337
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 42
+                                },
+                                "maneuver": "ramp-left",
+                                "polyline": {
+                                    "points": "}mq_IygrpA}@jDCD?BABGPABGNINGHCDOTKJIHKHMHKFKFa@LK@K@K@U?_@AS?S?]AM?iA?]@"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5258923,
+                                    "lng": 13.3679602
+                                },
+                                "start_location": {
+                                    "lat": 52.52334949999999,
+                                    "lng": 13.3697262
+                                },
+                                "html_instructions": "Take the exit on the <b>left</b> toward <b>A100</b>/<wbr/><b>Prenzlauer Berg</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "2.2 km",
+                                    "value": 2222
+                                },
+                                "duration": {
+                                    "text": "7 mins",
+                                    "value": 449
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "y}q_Iw|qpAS{@COIa@S{@GYGWIe@?GSeA_@cBKc@CKOe@Oe@Oi@CKIWEUCKACG]Mo@YmAUkAMg@s@iDEUMq@Oq@Kk@Ic@ACIWCISu@WmA?AOm@Ki@IYMq@ESOs@]eBMs@E[CKAKAGCIG]COSaAMs@_@gBKc@M_@K[CKAKGUMo@CQCGCK[_BEOAGMm@?COi@Ms@EQCOAICMCYEWCOCMCQKc@Ms@Ow@GWGSCMIe@Ic@Ia@UkAGe@]iBUiAEYKo@Ge@Ks@Ee@Cc@Eu@GkAGeAImBKkCGsAC_@?MCUCk@I}AMwCGiACY?IMuBIuACc@IgBI}AGcAAYSaDCk@Eq@Ek@?CEu@?SA[E{C?ECyAAa@A]Ae@Ae@EaA"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.53255850000001,
+                                    "lng": 13.3984955
+                                },
+                                "start_location": {
+                                    "lat": 52.5258923,
+                                    "lng": 13.3679602
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Invalidenstraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.3 km",
+                                    "value": 335
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 62
+                                },
+                                "polyline": {
+                                    "points": "ogs_Is{wpAGeACUCOCYCMQmACMCOGg@YmBYmBAMCQE]UuAe@eDG[CMCIEIGIGI"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.53366260000001,
+                                    "lng": 13.4030615
+                                },
+                                "start_location": {
+                                    "lat": 52.53255850000001,
+                                    "lng": 13.3984955
+                                },
+                                "html_instructions": "Continue onto <b>Veteranenstraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.1 km",
+                                    "value": 104
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 23
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "kns_IcxxpABKRm@\\gAh@mBFO"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5331419,
+                                    "lng": 13.4043364
+                                },
+                                "start_location": {
+                                    "lat": 52.53366260000001,
+                                    "lng": 13.4030615
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Fehrbelliner Str.</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.3 km",
+                                    "value": 292
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 51
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "cks_Ic`ypANNJLFDz@z@x@v@BBpAnA`A~@NNFFPNLJFDt@l@^X"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5308587,
+                                    "lng": 13.4021946
+                                },
+                                "start_location": {
+                                    "lat": 52.5331419,
+                                    "lng": 13.4043364
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Weinbergsweg</b><div style=\"font-size:0.9em\">Destination will be on the right</div>"
+                            }
+                        ],
+                        "distance": {
+                            "text": "5.7 km",
+                            "value": 5723
+                        },
+                        "duration": {
+                            "text": "14 mins",
+                            "value": 868
+                        },
+                        "end_address": "Weinbergsweg 23, 10119 Berlin, Germany",
+                        "end_location": {
+                            "lat": 52.5308587,
+                            "lng": 13.4021946
+                        },
+                        "via_waypoint": [],
+                        "start_address": "Eichhornstraße 3/10th Floor, 10785 Berlin, Germany",
+                        "start_location": {
+                            "lat": 52.5055054,
+                            "lng": 13.3730724
+                        },
+                        "traffic_speed_entry": []
+                    },
+                    {
+                        "steps": [
+                            {
+                                "distance": {
+                                    "text": "0.3 km",
+                                    "value": 292
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 70
+                                },
+                                "polyline": {
+                                    "points": "{|r_IurxpA_@Yu@m@GEMKQOGGOOaA_AqAoACCy@w@{@{@GEKMOO"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5331419,
+                                    "lng": 13.4043364
+                                },
+                                "start_location": {
+                                    "lat": 52.5308587,
+                                    "lng": 13.4021946
+                                },
+                                "html_instructions": "Head <b>northeast</b> on <b>Weinbergsweg</b> toward <b>Zehdenicker Str.</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.5 km",
+                                    "value": 536
+                                },
+                                "duration": {
+                                    "text": "2 mins",
+                                    "value": 96
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "cks_Ic`ypAJY^cATo@L_@Tm@b@sAb@oAFUNe@HUj@kBDODI?ADKFYJ]BKt@_DJg@H[H]j@}BViAd@oBNm@Nc@"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5305514,
+                                    "lng": 13.4110064
+                                },
+                                "start_location": {
+                                    "lat": 52.5331419,
+                                    "lng": 13.4043364
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Fehrbelliner Str.</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.2 km",
+                                    "value": 216
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 47
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "}zr_IyizpARXFJLRFHTXRDp@f@xB~A^ZZTNN"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5288543,
+                                    "lng": 13.4095012
+                                },
+                                "start_location": {
+                                    "lat": 52.5305514,
+                                    "lng": 13.4110064
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Schönhauser Allee</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.5 km",
+                                    "value": 476
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 80
+                                },
+                                "maneuver": "turn-left",
+                                "polyline": {
+                                    "points": "ipr_Ik`zpAXTLcABKHu@PyABQLuAFq@BMBSDWDUJe@Fc@FWh@yCb@_CBKPaAJe@DUJYPk@Xq@FMTe@LWRc@"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5269282,
+                                    "lng": 13.4154304
+                                },
+                                "start_location": {
+                                    "lat": 52.5288543,
+                                    "lng": 13.4095012
+                                },
+                                "html_instructions": "Turn <b>left</b> onto <b>Torstraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.3 km",
+                                    "value": 345
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 67
+                                },
+                                "polyline": {
+                                    "points": "idr_Ime{pA^o@\\y@JYL[JYL[H[HUJ]J]BKJY`@oABKDKDSLa@DOBOJa@DSDOJ_@H]Ro@h@eB"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5251504,
+                                    "lng": 13.4195996
+                                },
+                                "start_location": {
+                                    "lat": 52.5269282,
+                                    "lng": 13.4154304
+                                },
+                                "html_instructions": "Continue onto <b>Mollstraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.5 km",
+                                    "value": 459
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 70
+                                },
+                                "maneuver": "turn-left",
+                                "polyline": {
+                                    "points": "eyq_Io_|pA\\iAm@s@e@u@w@aAaAoA}AoBUYkAyAQWi@u@MQ[a@[e@AA[g@w@iA"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5280695,
+                                    "lng": 13.4237924
+                                },
+                                "start_location": {
+                                    "lat": 52.5251504,
+                                    "lng": 13.4195996
+                                },
+                                "html_instructions": "Turn <b>left</b> onto <b>Otto-Braun-Straße</b>/<wbr/><b>B2</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.3 km",
+                                    "value": 343
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 64
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "mkr_Iuy|pAU[LgABQ@M@M@M?YAK?MAEAKAK?AOu@KaAASGu@E}@Eu@Gq@SkDEg@Eq@KcB"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5286082,
+                                    "lng": 13.428624
+                                },
+                                "start_location": {
+                                    "lat": 52.5280695,
+                                    "lng": 13.4237924
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Am Friedrichshain</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.1 km",
+                                    "value": 103
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 36
+                                },
+                                "maneuver": "turn-left",
+                                "polyline": {
+                                    "points": "ynr_I{w}pAUDK@q@JC@E@E?EAECEAs@aA"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5294591,
+                                    "lng": 13.4288742
+                                },
+                                "start_location": {
+                                    "lat": 52.5286082,
+                                    "lng": 13.428624
+                                },
+                                "html_instructions": "Turn <b>left</b> to stay on <b>Am Friedrichshain</b><div style=\"font-size:0.9em\">Destination will be on the right</div>"
+                            }
+                        ],
+                        "distance": {
+                            "text": "2.8 km",
+                            "value": 2770
+                        },
+                        "duration": {
+                            "text": "9 mins",
+                            "value": 530
+                        },
+                        "end_address": "Am Friedrichshain 18, 10407 Berlin, Germany",
+                        "end_location": {
+                            "lat": 52.5294591,
+                            "lng": 13.4288742
+                        },
+                        "via_waypoint": [],
+                        "start_address": "Weinbergsweg 23, 10119 Berlin, Germany",
+                        "start_location": {
+                            "lat": 52.5308587,
+                            "lng": 13.4021946
+                        },
+                        "traffic_speed_entry": []
+                    },
+                    {
+                        "steps": [
+                            {
+                                "distance": {
+                                    "text": "0.1 km",
+                                    "value": 103
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 28
+                                },
+                                "polyline": {
+                                    "points": "ctr_Imy}pAr@`AD@DBD@D?DABAp@KJATE"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5286082,
+                                    "lng": 13.428624
+                                },
+                                "start_location": {
+                                    "lat": 52.5294591,
+                                    "lng": 13.4288742
+                                },
+                                "html_instructions": "Head <b>southwest</b> on <b>Am Friedrichshain</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.6 km",
+                                    "value": 621
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 72
+                                },
+                                "maneuver": "turn-left",
+                                "polyline": {
+                                    "points": "ynr_I{w}pAAWAOa@aHGcAGkBG{@Es@K_BCe@M{BG{@Ew@GcAC[Cg@QqCOiCA[Eg@B]?GIkAMgCASAYAGCS"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5296062,
+                                    "lng": 13.4376386
+                                },
+                                "start_location": {
+                                    "lat": 52.5286082,
+                                    "lng": 13.428624
+                                },
+                                "html_instructions": "Turn <b>left</b> to stay on <b>Am Friedrichshain</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.2 km",
+                                    "value": 179
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 22
+                                },
+                                "polyline": {
+                                    "points": "aur_Igp_qAQi@AAISOYAAS]a@w@Yg@cB{C"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5307462,
+                                    "lng": 13.4395061
+                                },
+                                "start_location": {
+                                    "lat": 52.5296062,
+                                    "lng": 13.4376386
+                                },
+                                "html_instructions": "Continue onto <b>Kniprodestraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.2 km",
+                                    "value": 217
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 54
+                                },
+                                "maneuver": "turn-left",
+                                "polyline": {
+                                    "points": "e|r_I}{_qAO\\Sj@M^a@hAi@xAM`@GPo@jB[x@IV"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5319227,
+                                    "lng": 13.4369489
+                                },
+                                "start_location": {
+                                    "lat": 52.5307462,
+                                    "lng": 13.4395061
+                                },
+                                "html_instructions": "Turn <b>left</b> onto <b>Pasteurstraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.1 km",
+                                    "value": 106
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 34
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "ocs_I}k_qAo@y@_AmAUa@OW"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5326736,
+                                    "lng": 13.4379224
+                                },
+                                "start_location": {
+                                    "lat": 52.5319227,
+                                    "lng": 13.4369489
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Hans-Otto-Straße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "32 m",
+                                    "value": 32
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 11
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "ehs_I_r_qAb@iA"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5324947,
+                                    "lng": 13.4382931
+                                },
+                                "start_location": {
+                                    "lat": 52.5326736,
+                                    "lng": 13.4379224
+                                },
+                                "html_instructions": "Turn <b>right</b>"
+                            }
+                        ],
+                        "distance": {
+                            "text": "1.3 km",
+                            "value": 1258
+                        },
+                        "duration": {
+                            "text": "4 mins",
+                            "value": 221
+                        },
+                        "end_address": "Hans-Otto-Straße 42B, 10407 Berlin, Germany",
+                        "end_location": {
+                            "lat": 52.5324947,
+                            "lng": 13.4382931
+                        },
+                        "via_waypoint": [],
+                        "start_address": "Am Friedrichshain 18, 10407 Berlin, Germany",
+                        "start_location": {
+                            "lat": 52.5294591,
+                            "lng": 13.4288742
+                        },
+                        "traffic_speed_entry": []
+                    },
+                    {
+                        "steps": [
+                            {
+                                "distance": {
+                                    "text": "32 m",
+                                    "value": 32
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 10
+                                },
+                                "polyline": {
+                                    "points": "ags_Iit_qAc@hA"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5326736,
+                                    "lng": 13.4379224
+                                },
+                                "start_location": {
+                                    "lat": 52.5324947,
+                                    "lng": 13.4382931
+                                },
+                                "html_instructions": "Head <b>northwest</b> toward <b>Hans-Otto-Straße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "92 m",
+                                    "value": 92
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 20
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "ehs_I_r_qAcB_CMQQS"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5333301,
+                                    "lng": 13.4387481
+                                },
+                                "start_location": {
+                                    "lat": 52.5326736,
+                                    "lng": 13.4379224
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Hans-Otto-Straße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.2 km",
+                                    "value": 223
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 28
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "ils_Iew_qARi@jB}EXu@HSRi@Zw@BI`@cA"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5320755,
+                                    "lng": 13.4413198
+                                },
+                                "start_location": {
+                                    "lat": 52.5333301,
+                                    "lng": 13.4387481
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Danziger Str.</b>/<wbr/><b>B96a</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.4 km",
+                                    "value": 429
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 60
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "ods_Igg`qAT`@p@nAl@`A@B~@dBr@rALTXh@l@hAr@pAj@`A^p@DHDBHPDJDV?@@L@D?H@LJjB"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.52956649999999,
+                                    "lng": 13.4366778
+                                },
+                                "start_location": {
+                                    "lat": 52.5320755,
+                                    "lng": 13.4413198
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Kniprodestraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.9 km",
+                                    "value": 883
+                                },
+                                "duration": {
+                                    "text": "2 mins",
+                                    "value": 132
+                                },
+                                "polyline": {
+                                    "points": "ytr_Igj_qA@THjA?@H^Df@@ZNhCPpCBf@BZFbADv@Fz@LzBBd@J~ADr@Fz@FjBFbA`@`H@N@VJbBDp@Df@RjDFp@Dt@D|@Ft@@RJ`ANt@?@@J@J@D?L@J?XALALALCPMfA"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5281827,
+                                    "lng": 13.4239328
+                                },
+                                "start_location": {
+                                    "lat": 52.52956649999999,
+                                    "lng": 13.4366778
+                                },
+                                "html_instructions": "Continue onto <b>Am Friedrichshain</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.4 km",
+                                    "value": 432
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 79
+                                },
+                                "maneuver": "turn-left",
+                                "polyline": {
+                                    "points": "clr_Iqz|pAOx@X^d@n@Xd@v@jAZd@bCvD~@rAb@p@`AxAX^lAzA"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5253846,
+                                    "lng": 13.4198177
+                                },
+                                "start_location": {
+                                    "lat": 52.5281827,
+                                    "lng": 13.4239328
+                                },
+                                "html_instructions": "Turn <b>left</b> onto <b>Otto-Braun-Straße</b>/<wbr/><b>B2</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.3 km",
+                                    "value": 321
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 74
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "szq_I{`|pAuAnEaAxCs@rBy@dCa@jAUp@Od@"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5270525,
+                                    "lng": 13.4159391
+                                },
+                                "start_location": {
+                                    "lat": 52.5253846,
+                                    "lng": 13.4198177
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Mollstraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "1.3 km",
+                                    "value": 1300
+                                },
+                                "duration": {
+                                    "text": "4 mins",
+                                    "value": 220
+                                },
+                                "maneuver": "turn-left",
+                                "polyline": {
+                                    "points": "aer_Ish{pA[p@r@r@^`@HJNPTVX^r@v@PRl@r@|@nAr@~@RX`BxB\\d@j@t@x@fATZdB~CfB`DNXVd@JVDHZt@Pb@b@hAh@nAXt@dAhCZv@b@fATj@P`@L\\JXJXJZRj@^|@N`@N^Vn@Rd@j@nAVf@FNf@fAHJR\\DHLLFNFLFLJTDLBH@FDJ"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5189642,
+                                    "lng": 13.4026989
+                                },
+                                "start_location": {
+                                    "lat": 52.5270525,
+                                    "lng": 13.4159391
+                                },
+                                "html_instructions": "Turn <b>left</b> onto <b>Karl-Liebknecht-Str.</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "1.0 km",
+                                    "value": 981
+                                },
+                                "duration": {
+                                    "text": "3 mins",
+                                    "value": 152
+                                },
+                                "polyline": {
+                                    "points": "orp_I{uxpALb@BJTt@J\\DPL^?BJ\\Jb@HVLd@DX^xA`@|A`@|ADRDZBP@V@^@R?DBv@DlABx@FrBBz@DrBBb@FzB@RDrA@\\FtBBpADx@?R@L?J?H?F?D?F?FAD?FAJAF?DAB?D?D?HAH@H?L?b@@h@Bn@BxADhAF|BHzC@x@FbB@z@"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.51715799999999,
+                                    "lng": 13.3888125
+                                },
+                                "start_location": {
+                                    "lat": 52.5189642,
+                                    "lng": 13.4026989
+                                },
+                                "html_instructions": "Continue onto <b>Bundesstraße 5</b>/<wbr/><b>B2</b><div style=\"font-size:0.9em\">Continue to follow B2</div>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.4 km",
+                                    "value": 366
+                                },
+                                "duration": {
+                                    "text": "2 mins",
+                                    "value": 90
+                                },
+                                "maneuver": "turn-left",
+                                "polyline": {
+                                    "points": "ggp_Ia_vpA\\EXEjAIv@G\\CrAMf@E|@IhAIj@Gp@Gl@Gd@E"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5138835,
+                                    "lng": 13.389329
+                                },
+                                "start_location": {
+                                    "lat": 52.51715799999999,
+                                    "lng": 13.3888125
+                                },
+                                "html_instructions": "Turn <b>left</b> onto <b>Friedrichstraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.1 km",
+                                    "value": 130
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 35
+                                },
+                                "maneuver": "turn-left",
+                                "polyline": {
+                                    "points": "wro_IibvpACo@A_@Ac@?I?ECw@Ay@E_BAU?Q"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5139905,
+                                    "lng": 13.3912366
+                                },
+                                "start_location": {
+                                    "lat": 52.5138835,
+                                    "lng": 13.389329
+                                },
+                                "html_instructions": "Turn <b>left</b> onto <b>Jägerstraße</b>"
+                            }
+                        ],
+                        "distance": {
+                            "text": "5.2 km",
+                            "value": 5189
+                        },
+                        "duration": {
+                            "text": "15 mins",
+                            "value": 900
+                        },
+                        "end_address": "Konzerthaus Berlin, Gendarmenmarkt 2, 10117 Berlin, Germany",
+                        "end_location": {
+                            "lat": 52.5139905,
+                            "lng": 13.3912366
+                        },
+                        "via_waypoint": [],
+                        "start_address": "Hans-Otto-Straße 42B, 10407 Berlin, Germany",
+                        "start_location": {
+                            "lat": 52.5324947,
+                            "lng": 13.4382931
+                        },
+                        "traffic_speed_entry": []
+                    },
+                    {
+                        "steps": [
+                            {
+                                "distance": {
+                                    "text": "0.1 km",
+                                    "value": 130
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 40
+                                },
+                                "polyline": {
+                                    "points": "mso_IgnvpA?P@TD~A@x@Bv@?D?H@b@@^Bn@"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5138835,
+                                    "lng": 13.389329
+                                },
+                                "start_location": {
+                                    "lat": 52.5139905,
+                                    "lng": 13.3912366
+                                },
+                                "html_instructions": "Head <b>west</b> on <b>Jägerstraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.3 km",
+                                    "value": 335
+                                },
+                                "duration": {
+                                    "text": "2 mins",
+                                    "value": 91
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "wro_IibvpAe@Dm@Fq@Fk@FiAH}@Hg@DsAL]Bw@FkAH"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5168818,
+                                    "lng": 13.3888658
+                                },
+                                "start_location": {
+                                    "lat": 52.5138835,
+                                    "lng": 13.389329
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Friedrichstraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "1.8 km",
+                                    "value": 1835
+                                },
+                                "duration": {
+                                    "text": "5 mins",
+                                    "value": 315
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "oep_Im_vpACgAEcBE_BCq@Ao@EqAEmBIuBCi@A_@?UCq@C]GYAGAE?AAE?EAIAYCsAGwBGmBEkBAe@EoAAm@GoCEi@Cy@CgAA[?QAUAYCgAAQCe@CWCQE[EWGYGYKYEQGUGQCMEMk@uB_@mAWaAK]K]AIEIY}@ACGSEOEQIWCGCEIUO_@O]_@y@k@uASe@Ui@KWAAKYOe@IUKYIQKWM[M[M[Uk@KUISGKGMWo@Qe@O_@]{@MWe@kAQc@o@aBIUGOKW]{@AEISGKO_@M_@g@mAa@aAISMSKS{@{Ae@}@Ua@m@eAi@y@"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5239254,
+                                    "lng": 13.4121897
+                                },
+                                "start_location": {
+                                    "lat": 52.5168818,
+                                    "lng": 13.3888658
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Unter den Linden</b>/<wbr/><b>B2</b><div style=\"font-size:0.9em\">Continue to follow B2</div>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.3 km",
+                                    "value": 298
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 76
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "qqq_IeqzpAj@_Bd@uAZ}@Xu@Xw@j@wAVs@`@gAL[FSJYZ}@"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5223015,
+                                    "lng": 13.4156953
+                                },
+                                "start_location": {
+                                    "lat": 52.5239254,
+                                    "lng": 13.4121897
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Bundesstraße 5</b>/<wbr/><b>B2</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "44 m",
+                                    "value": 44
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 10
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "kgq_Icg{pAZp@Vn@"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5220387,
+                                    "lng": 13.4152059
+                                },
+                                "start_location": {
+                                    "lat": 52.5223015,
+                                    "lng": 13.4156953
+                                },
+                                "html_instructions": "Turn <b>right</b>"
+                            }
+                        ],
+                        "distance": {
+                            "text": "2.6 km",
+                            "value": 2642
+                        },
+                        "duration": {
+                            "text": "9 mins",
+                            "value": 532
+                        },
+                        "end_address": "Berolinahaus, Alexanderpl., 10178 Berlin, Germany",
+                        "end_location": {
+                            "lat": 52.5220387,
+                            "lng": 13.4152059
+                        },
+                        "via_waypoint": [],
+                        "start_address": "Konzerthaus Berlin, Gendarmenmarkt 2, 10117 Berlin, Germany",
+                        "start_location": {
+                            "lat": 52.5139905,
+                            "lng": 13.3912366
+                        },
+                        "traffic_speed_entry": []
+                    },
+                    {
+                        "steps": [
+                            {
+                                "distance": {
+                                    "text": "44 m",
+                                    "value": 44
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 14
+                                },
+                                "polyline": {
+                                    "points": "weq_Iad{pAWo@[q@"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5223015,
+                                    "lng": 13.4156953
+                                },
+                                "start_location": {
+                                    "lat": 52.5220387,
+                                    "lng": 13.4152059
+                                },
+                                "html_instructions": "Head <b>northeast</b> toward <b>Bundesstraße 5</b>/<wbr/><b>B2</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "50 m",
+                                    "value": 50
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 22
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "kgq_Icg{pA`@iAJUFS"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.52203009999999,
+                                    "lng": 13.4162802
+                                },
+                                "start_location": {
+                                    "lat": 52.5223015,
+                                    "lng": 13.4156953
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Bundesstraße 5</b>/<wbr/><b>B2</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.5 km",
+                                    "value": 515
+                                },
+                                "duration": {
+                                    "text": "2 mins",
+                                    "value": 90
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "ueq_Iwj{pA^`@b@d@LPZ^bAhA^`@HHHJNNDDDFHHDFFHLPHLBFHLHPN^HNJVDHFNJZFPj@~ATp@FRBHHZDLBHDLHRT^DHLZ@BNd@FTZz@R`@Ph@"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5187792,
+                                    "lng": 13.4109908
+                                },
+                                "start_location": {
+                                    "lat": 52.52203009999999,
+                                    "lng": 13.4162802
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Alexanderstraße</b>/<wbr/><b>B1</b><div style=\"font-size:0.9em\">Continue to follow B1</div>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.2 km",
+                                    "value": 224
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 44
+                                },
+                                "polyline": {
+                                    "points": "kqp_IuizpAHRFNtAzDHRpBfFTh@"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5175321,
+                                    "lng": 13.4084008
+                                },
+                                "start_location": {
+                                    "lat": 52.5187792,
+                                    "lng": 13.4109908
+                                },
+                                "html_instructions": "Continue onto <b>Grunerstraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "68 m",
+                                    "value": 68
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 17
+                                },
+                                "maneuver": "turn-left",
+                                "polyline": {
+                                    "points": "qip_IoyypAJVRQRSHI@AFGHGRQ"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.517022,
+                                    "lng": 13.4087017
+                                },
+                                "start_location": {
+                                    "lat": 52.5175321,
+                                    "lng": 13.4084008
+                                },
+                                "html_instructions": "Turn <b>left</b> onto <b>Spandauer Str.</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.8 km",
+                                    "value": 825
+                                },
+                                "duration": {
+                                    "text": "2 mins",
+                                    "value": 148
+                                },
+                                "polyline": {
+                                    "points": "kfp_Ik{ypAFEFGD?F?LD@@DDHFDFb@j@LRx@x@~@~@NZJJ`@^BBDHDFt@~@`@f@d@j@p@x@lAxAFHJRTZFHlAhBp@fA|@vAT^R\\LTNRNX`@p@BDBFFJT`@FHHLd@r@T^BHFJHPDNDLDJFTDNDPFTBP@HDRBH@B"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.511345,
+                                    "lng": 13.4012197
+                                },
+                                "start_location": {
+                                    "lat": 52.517022,
+                                    "lng": 13.4087017
+                                },
+                                "html_instructions": "Continue onto <b>Mühlendamm</b>/<wbr/><b>B1</b><div style=\"font-size:0.9em\">Continue to follow B1</div>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.4 km",
+                                    "value": 402
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 73
+                                },
+                                "maneuver": "turn-left",
+                                "polyline": {
+                                    "points": "{bo_IslxpAB`@\\Q\\GJAVCH?H?F@D@B?D@B@@BB@B@LNPTX\\JHLNX^LN`@h@HJ@@DDFHJHRPRL\\TJFFDRL@?B?B?DE|AbA\\T\\R"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.50817259999999,
+                                    "lng": 13.3990768
+                                },
+                                "start_location": {
+                                    "lat": 52.511345,
+                                    "lng": 13.4012197
+                                },
+                                "html_instructions": "Turn <b>left</b> onto <b>Axel-Springer-Straße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.7 km",
+                                    "value": 740
+                                },
+                                "duration": {
+                                    "text": "2 mins",
+                                    "value": 141
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "aon_Ig_xpAC^AL?JBt@DzAFvB@n@R`INvGBhANrHBhAJrCFxBB`@?ZBfAHhDFjD"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5075703,
+                                    "lng": 13.3882041
+                                },
+                                "start_location": {
+                                    "lat": 52.50817259999999,
+                                    "lng": 13.3990768
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Zimmerstraße</b><div style=\"font-size:0.9em\">Destination will be on the right</div>"
+                            }
+                        ],
+                        "distance": {
+                            "text": "2.9 km",
+                            "value": 2868
+                        },
+                        "duration": {
+                            "text": "9 mins",
+                            "value": 549
+                        },
+                        "end_address": "Zimmerstraße 11, 10969 Berlin, Germany",
+                        "end_location": {
+                            "lat": 52.5075703,
+                            "lng": 13.3882041
+                        },
+                        "via_waypoint": [],
+                        "start_address": "Berolinahaus, Alexanderpl., 10178 Berlin, Germany",
+                        "start_location": {
+                            "lat": 52.5220387,
+                            "lng": 13.4152059
+                        },
+                        "traffic_speed_entry": []
+                    },
+                    {
+                        "steps": [
+                            {
+                                "distance": {
+                                    "text": "0.7 km",
+                                    "value": 740
+                                },
+                                "duration": {
+                                    "text": "2 mins",
+                                    "value": 143
+                                },
+                                "polyline": {
+                                    "points": "ikn_Ig{upAGkDIiDCgA?[Ca@GyBKsCCiAOsHCiAOwGSaIAo@GwBE{ACu@?K@MB_@"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.50817259999999,
+                                    "lng": 13.3990768
+                                },
+                                "start_location": {
+                                    "lat": 52.5075703,
+                                    "lng": 13.3882041
+                                },
+                                "html_instructions": "Head <b>east</b> on <b>Zimmerstraße</b> toward <b>Friedrichstraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.2 km",
+                                    "value": 168
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 23
+                                },
+                                "maneuver": "turn-left",
+                                "polyline": {
+                                    "points": "aon_Ig_xpA]S]U}AcACKACACECMGg@[e@[GECC"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5095333,
+                                    "lng": 13.4001194
+                                },
+                                "start_location": {
+                                    "lat": 52.50817259999999,
+                                    "lng": 13.3990768
+                                },
+                                "html_instructions": "Turn <b>left</b> onto <b>Axel-Springer-Straße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.3 km",
+                                    "value": 347
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 57
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "qwn_IwexpAVaAH_@XiA`@_BtAaGFUFYFOVy@d@wA~@cC"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5078797,
+                                    "lng": 13.4044615
+                                },
+                                "start_location": {
+                                    "lat": 52.5095333,
+                                    "lng": 13.4001194
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Kommandantenstraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.5 km",
+                                    "value": 495
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 87
+                                },
+                                "maneuver": "turn-left",
+                                "polyline": {
+                                    "points": "gmn_I{`ypAeA}BSc@g@aAi@gA_@s@GKIM[m@Ua@a@q@[g@_@k@M]{@}ASa@ISEMCICGCKAGAGAOE[EYOgAK}@Ec@CYCS"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5106221,
+                                    "lng": 13.4100443
+                                },
+                                "start_location": {
+                                    "lat": 52.5078797,
+                                    "lng": 13.4044615
+                                },
+                                "html_instructions": "Turn <b>left</b> onto <b>Alte Jakobstraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.3 km",
+                                    "value": 277
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 50
+                                },
+                                "polyline": {
+                                    "points": "k~n_IwczpAJY@aA?W@{@?A?o@Ag@?G?EAICKa@{AAGEUKc@m@_COi@Os@S{@"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5113382,
+                                    "lng": 13.4137548
+                                },
+                                "start_location": {
+                                    "lat": 52.5106221,
+                                    "lng": 13.4100443
+                                },
+                                "html_instructions": "Continue onto <b>Neue Jakobstraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.7 km",
+                                    "value": 651
+                                },
+                                "duration": {
+                                    "text": "2 mins",
+                                    "value": 140
+                                },
+                                "maneuver": "merge",
+                                "polyline": {
+                                    "points": "{bo_I}zzpABS?G@E?Q?M@g@@YDsB?c@Fw@@G@Q@SBQ@G?E@EBSBK@M@A?ENaAf@sCLs@F_@PaAJm@@GPeA@GPiARkA@EN_A\\qBN}@^uBLy@Lw@TqATuAF["
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.509366,
+                                    "lng": 13.4227387
+                                },
+                                "start_location": {
+                                    "lat": 52.5113382,
+                                    "lng": 13.4137548
+                                },
+                                "html_instructions": "Merge onto <b>Köpenicker Str.</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "25 m",
+                                    "value": 25
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 22
+                                },
+                                "maneuver": "turn-left",
+                                "polyline": {
+                                    "points": "qvn_Ics|pASMKIEAA?"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5095748,
+                                    "lng": 13.4228654
+                                },
+                                "start_location": {
+                                    "lat": 52.509366,
+                                    "lng": 13.4227387
+                                },
+                                "html_instructions": "Turn <b>left</b><div style=\"font-size:0.9em\">Partial restricted usage road</div>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.1 km",
+                                    "value": 144
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 27
+                                },
+                                "maneuver": "keep-right",
+                                "polyline": {
+                                    "points": "ywn_I}s|pA{@c@KGCECGCECGECcBaAi@["
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5107541,
+                                    "lng": 13.423724
+                                },
+                                "start_location": {
+                                    "lat": 52.5095748,
+                                    "lng": 13.4228654
+                                },
+                                "html_instructions": "Keep <b>right</b><div style=\"font-size:0.9em\">Restricted usage road</div>"
+                            }
+                        ],
+                        "distance": {
+                            "text": "2.8 km",
+                            "value": 2847
+                        },
+                        "duration": {
+                            "text": "9 mins",
+                            "value": 549
+                        },
+                        "end_address": "Wilhelmine-Gemberg-Weg 13, 10179 Berlin, Germany",
+                        "end_location": {
+                            "lat": 52.5107541,
+                            "lng": 13.423724
+                        },
+                        "via_waypoint": [],
+                        "start_address": "Zimmerstraße 11, 10969 Berlin, Germany",
+                        "start_location": {
+                            "lat": 52.5075703,
+                            "lng": 13.3882041
+                        },
+                        "traffic_speed_entry": []
+                    },
+                    {
+                        "steps": [
+                            {
+                                "distance": {
+                                    "text": "0.2 km",
+                                    "value": 169
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 31
+                                },
+                                "polyline": {
+                                    "points": "e_o_Igy|pAh@ZbB`ADBBFBDBFBDJFz@b@@?D@JHRL"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.509366,
+                                    "lng": 13.4227387
+                                },
+                                "start_location": {
+                                    "lat": 52.5107541,
+                                    "lng": 13.423724
+                                },
+                                "html_instructions": "Head <b>south</b> toward <b>Köpenicker Str.</b><div style=\"font-size:0.9em\">Partial restricted usage road</div>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.7 km",
+                                    "value": 653
+                                },
+                                "duration": {
+                                    "text": "3 mins",
+                                    "value": 151
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "qvn_Ics|pAGZUtAUpAMv@Mx@_@tBO|@]pBO~@ADSjAQhAAFQdAAFKl@Q`AG^Mr@g@rCO`A?DA@ALCJCRAD?DAFCPARAPAFGv@KZETIt@Gh@M`AE^EZ"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5115709,
+                                    "lng": 13.4138069
+                                },
+                                "start_location": {
+                                    "lat": 52.509366,
+                                    "lng": 13.4227387
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Köpenicker Str.</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.3 km",
+                                    "value": 294
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 47
+                                },
+                                "maneuver": "turn-left",
+                                "polyline": {
+                                    "points": "ido_Ii{zpALJBBBB@?@@@?@ANGRz@Nr@Nh@l@~BJb@DT@F`@zABJ@H?D?F@f@?n@?@Az@?VA`A"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5105619,
+                                    "lng": 13.4101663
+                                },
+                                "start_location": {
+                                    "lat": 52.5115709,
+                                    "lng": 13.4138069
+                                },
+                                "html_instructions": "Turn <b>left</b> onto <b>Neue Jakobstraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.5 km",
+                                    "value": 506
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 83
+                                },
+                                "polyline": {
+                                    "points": "_~n_IqdzpAKXBRBXDb@J|@NfADXDZ@N@F@FBJBFBHDLHRR`@z@|AL\\^j@Zf@`@p@T`@Zl@HLFJ^r@h@fAf@`ARb@dA|B"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5078797,
+                                    "lng": 13.4044615
+                                },
+                                "start_location": {
+                                    "lat": 52.5105619,
+                                    "lng": 13.4101663
+                                },
+                                "html_instructions": "Continue onto <b>Alte Jakobstraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.3 km",
+                                    "value": 347
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 54
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "gmn_I{`ypA_AbCe@vAWx@GNGXGTuA`Ga@~AYhAI^W`A"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5095333,
+                                    "lng": 13.4001194
+                                },
+                                "start_location": {
+                                    "lat": 52.5078797,
+                                    "lng": 13.4044615
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Kommandantenstraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "64 m",
+                                    "value": 64
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 12
+                                },
+                                "maneuver": "turn-left",
+                                "polyline": {
+                                    "points": "qwn_IwexpAGTRPRL\\TJFFD"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5091192,
+                                    "lng": 13.3996707
+                                },
+                                "start_location": {
+                                    "lat": 52.5095333,
+                                    "lng": 13.4001194
+                                },
+                                "html_instructions": "Turn <b>left</b> onto <b>Axel-Springer-Straße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.7 km",
+                                    "value": 699
+                                },
+                                "duration": {
+                                    "text": "2 mins",
+                                    "value": 115
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "_un_I}bxpAEVA@?@?@?@?FBfA@DDtBRpF?P?FBR?z@`@~O@V@^FzBFlC@v@FvCJdE@f@BbA@NBdA"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5085373,
+                                    "lng": 13.3894157
+                                },
+                                "start_location": {
+                                    "lat": 52.5091192,
+                                    "lng": 13.3996707
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Schützenstraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.3 km",
+                                    "value": 337
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 71
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "kqn_I{bvpAEPKTq@rAIPCFGLMLONOLURuAvA_@^YX]Z_@`@MJ}@x@IFGDI@E@C?W@"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5110528,
+                                    "lng": 13.3867892
+                                },
+                                "start_location": {
+                                    "lat": 52.5085373,
+                                    "lng": 13.3894157
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Mauerstraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "94 m",
+                                    "value": 94
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 16
+                                },
+                                "polyline": {
+                                    "points": "aao_ImrupAgDX"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5118928,
+                                    "lng": 13.3866571
+                                },
+                                "start_location": {
+                                    "lat": 52.5110528,
+                                    "lng": 13.3867892
+                                },
+                                "html_instructions": "Continue onto <b>Glinkastraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "52 m",
+                                    "value": 52
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 10
+                                },
+                                "maneuver": "turn-left",
+                                "polyline": {
+                                    "points": "ifo_IsqupAM@?L@`@BpA"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5119263,
+                                    "lng": 13.3860026
+                                },
+                                "start_location": {
+                                    "lat": 52.5118928,
+                                    "lng": 13.3866571
+                                },
+                                "html_instructions": "Turn <b>left</b> onto <b>Mohrenstraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.4 km",
+                                    "value": 397
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 80
+                                },
+                                "polyline": {
+                                    "points": "qfo_IomupAE@EDOLw@b@WLWLIDEBIBkDrA_AZc@Pk@NG@SFQ?K?A?MBi@Ns@NODG@QH"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5153508,
+                                    "lng": 13.3844528
+                                },
+                                "start_location": {
+                                    "lat": 52.5119263,
+                                    "lng": 13.3860026
+                                },
+                                "html_instructions": "<b>Mohrenstraße</b> turns <b>right</b> and becomes <b>Mauerstraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.5 km",
+                                    "value": 481
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 82
+                                },
+                                "maneuver": "turn-left",
+                                "polyline": {
+                                    "points": "}{o_IycupADvA?N@LDxA?NBd@@ZBx@BpABdA@V@T@T@VHr@PzAPtA@LHl@@HBTJz@BXBN@NBN@R@L@\\@b@Bd@@t@FvB@^"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5145755,
+                                    "lng": 13.3774908
+                                },
+                                "start_location": {
+                                    "lat": 52.5153508,
+                                    "lng": 13.3844528
+                                },
+                                "html_instructions": "Turn <b>left</b> onto <b>Behrenstraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.2 km",
+                                    "value": 196
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 37
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "cwo_IixspAQ@E@IAYASCg@Co@GSAC?G?I@I@I@C@EBIFCDEDABCHCHCDCJ?BADCFCFEHIJKJ"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5161642,
+                                    "lng": 13.3769081
+                                },
+                                "start_location": {
+                                    "lat": 52.5145755,
+                                    "lng": 13.3774908
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Ebertstraße</b>/<wbr/><b>B2</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "1.8 km",
+                                    "value": 1778
+                                },
+                                "duration": {
+                                    "text": "3 mins",
+                                    "value": 168
+                                },
+                                "maneuver": "turn-left",
+                                "polyline": {
+                                    "points": "_ap_IutspAWD@`@@`@Bx@@`@LfEJbEBh@DtBNxFNvFDvA@r@?LBf@@^HtCDjAFvBF|BLfFBhAT`IFvBP|GVtJDpBFjBXlLDtABj@V|JBfA@V@b@RfH@b@?T?R?d@EVARCNCNCJAHAJAHAN@P"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.51482009999999,
+                                    "lng": 13.3509694
+                                },
+                                "start_location": {
+                                    "lat": 52.5161642,
+                                    "lng": 13.3769081
+                                },
+                                "html_instructions": "Turn <b>left</b> onto <b>Bundesstraße 5</b>/<wbr/><b>B2</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "2.0 km",
+                                    "value": 1955
+                                },
+                                "duration": {
+                                    "text": "5 mins",
+                                    "value": 272
+                                },
+                                "maneuver": "roundabout-right",
+                                "polyline": {
+                                    "points": "sxo_IqrnpAKFABGJEHGJEJCLELCLALCN?HAF?F?F?D@F?F?F@F?F@H@F@H@F@F@H@FDLDNDJFJFHBBDDBDB@HFJF@N@FBH@DBFRn@DL?B@B?D?JNjFb@bO?J\\xLDhABfANxELnDNjF@^DrAB~@BnABp@BpA@RBl@?RBbA@X@p@@P@d@Df@FlCFnBD`BB|@Bv@Bd@BxA@`@@^@^B`@DhBFjBBp@@H@h@VvIJzDBx@@f@@PFdCVnJ@`@Bv@Bl@?H?HAHAJAFEX"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5128171,
+                                    "lng": 13.3228952
+                                },
+                                "start_location": {
+                                    "lat": 52.51482009999999,
+                                    "lng": 13.3509694
+                                },
+                                "html_instructions": "At <b>Großer Stern</b>, take the <b>3rd</b> exit and stay on <b>Bundesstraße 5</b>/<wbr/><b>B2</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "1.8 km",
+                                    "value": 1761
+                                },
+                                "duration": {
+                                    "text": "4 mins",
+                                    "value": 259
+                                },
+                                "maneuver": "roundabout-right",
+                                "polyline": {
+                                    "points": "clo_IccipAGDGFIFGHEDEHEJELCLCNCLAHAFANAP?D?@?R?R@RC~@?HAFAFADADAFEJCJMd@UbAId@M~@A?KhAE\\C\\G|@I~@ATE`@C`@E^CLANU`BCLADOv@AHk@hCcAvES|@q@xCe@zBMh@oAxF[tAAFI`@m@lCEXI\\S|@i@fCS|@_@dBa@jBCJEPCJMl@GRCNCDCHI\\EPIZERGXGZOl@SjACLQt@CNAFAFAFAJA@CNCNa@dBWdAMh@CJAFER]vAk@`Cc@rB]|Aa@fBK`@CJCL[pAU`AAFIXCJ?BG\\CNC\\"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5196821,
+                                    "lng": 13.2996848
+                                },
+                                "start_location": {
+                                    "lat": 52.5128171,
+                                    "lng": 13.3228952
+                                },
+                                "html_instructions": "At the roundabout, take the <b>2nd</b> exit onto <b>Otto-Suhr-Allee</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.3 km",
+                                    "value": 309
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 47
+                                },
+                                "polyline": {
+                                    "points": "_wp_I_rdpAAb@?P?V?T@p@DzABlALbFHxC@j@@l@FrB"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.51945260000001,
+                                    "lng": 13.2951411
+                                },
+                                "start_location": {
+                                    "lat": 52.5196821,
+                                    "lng": 13.2996848
+                                },
+                                "html_instructions": "Continue onto <b>Spandauer Damm</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "53 m",
+                                    "value": 53
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 11
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "qup_IsucpA]DI@I@K@K@I@K@"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.51992569999999,
+                                    "lng": 13.2950473
+                                },
+                                "start_location": {
+                                    "lat": 52.51945260000001,
+                                    "lng": 13.2951411
+                                },
+                                "html_instructions": "Turn <b>right</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "5 m",
+                                    "value": 5
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 1
+                                },
+                                "maneuver": "turn-slight-left",
+                                "polyline": {
+                                    "points": "qxp_IaucpAA@C??@A@"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5199698,
+                                    "lng": 13.2950236
+                                },
+                                "start_location": {
+                                    "lat": 52.51992569999999,
+                                    "lng": 13.2950473
+                                },
+                                "html_instructions": "Slight <b>left</b>"
+                            }
+                        ],
+                        "distance": {
+                            "text": "10.2 km",
+                            "value": 10150
+                        },
+                        "duration": {
+                            "text": "26 mins",
+                            "value": 1547
+                        },
+                        "end_address": "Spandauer Damm 10, 14059 Berlin, Germany",
+                        "end_location": {
+                            "lat": 52.5199698,
+                            "lng": 13.2950236
+                        },
+                        "via_waypoint": [],
+                        "start_address": "Wilhelmine-Gemberg-Weg 13, 10179 Berlin, Germany",
+                        "start_location": {
+                            "lat": 52.5107541,
+                            "lng": 13.423724
+                        },
+                        "traffic_speed_entry": []
+                    },
+                    {
+                        "steps": [
+                            {
+                                "distance": {
+                                    "text": "0.1 km",
+                                    "value": 116
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 39
+                                },
+                                "polyline": {
+                                    "points": "yxp_I{tcpAAB?DFlC?B@@@D@@BBB?HAJA@?FAH?JAJA\\C"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5193946,
+                                    "lng": 13.2942416
+                                },
+                                "start_location": {
+                                    "lat": 52.5199698,
+                                    "lng": 13.2950236
+                                },
+                                "html_instructions": "Head <b>west</b> toward <b>Spandauer Damm</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.1 km",
+                                    "value": 127
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 18
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "eup_I_pcpA?RPxGBdA"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5192836,
+                                    "lng": 13.2923788
+                                },
+                                "start_location": {
+                                    "lat": 52.5193946,
+                                    "lng": 13.2942416
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Spandauer Damm</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.2 km",
+                                    "value": 154
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 46
+                                },
+                                "maneuver": "turn-left",
+                                "polyline": {
+                                    "points": "otp_IkdcpAXCJATExAQzB["
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5179114,
+                                    "lng": 13.2926675
+                                },
+                                "start_location": {
+                                    "lat": 52.5192836,
+                                    "lng": 13.2923788
+                                },
+                                "html_instructions": "Turn <b>left</b> onto <b>Klausenerpl.</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "80 m",
+                                    "value": 80
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 21
+                                },
+                                "maneuver": "turn-left",
+                                "polyline": {
+                                    "points": "}kp_IefcpADUVqAVoA@GBEFE"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5175703,
+                                    "lng": 13.2936896
+                                },
+                                "start_location": {
+                                    "lat": 52.5179114,
+                                    "lng": 13.2926675
+                                },
+                                "html_instructions": "Turn <b>left</b> onto <b>Neufertstraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "79 m",
+                                    "value": 79
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 22
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "yip_IqlcpAlCU"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5168635,
+                                    "lng": 13.2938032
+                                },
+                                "start_location": {
+                                    "lat": 52.5175703,
+                                    "lng": 13.2936896
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Nehringstraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.2 km",
+                                    "value": 244
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 58
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "kep_IgmcpAD~BBz@Bx@VzKBz@"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5166507,
+                                    "lng": 13.2902082
+                                },
+                                "start_location": {
+                                    "lat": 52.5168635,
+                                    "lng": 13.2938032
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Christstraße</b><div style=\"font-size:0.9em\">Destination will be on the right</div>"
+                            }
+                        ],
+                        "distance": {
+                            "text": "0.8 km",
+                            "value": 800
+                        },
+                        "duration": {
+                            "text": "3 mins",
+                            "value": 204
+                        },
+                        "end_address": "Christstraße 30, 14059 Berlin, Germany",
+                        "end_location": {
+                            "lat": 52.5166507,
+                            "lng": 13.2902082
+                        },
+                        "via_waypoint": [],
+                        "start_address": "Spandauer Damm 10, 14059 Berlin, Germany",
+                        "start_location": {
+                            "lat": 52.5199698,
+                            "lng": 13.2950236
+                        },
+                        "traffic_speed_entry": []
+                    },
+                    {
+                        "steps": [
+                            {
+                                "distance": {
+                                    "text": "0.2 km",
+                                    "value": 193
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 46
+                                },
+                                "polyline": {
+                                    "points": "adp_IyvbpA^hOBl@"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5164712,
+                                    "lng": 13.2873702
+                                },
+                                "start_location": {
+                                    "lat": 52.5166507,
+                                    "lng": 13.2902082
+                                },
+                                "html_instructions": "Head <b>west</b> on <b>Christstraße</b> toward <b>Sophie-Charlotten-Straße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.7 km",
+                                    "value": 666
+                                },
+                                "duration": {
+                                    "text": "2 mins",
+                                    "value": 128
+                                },
+                                "maneuver": "turn-left",
+                                "polyline": {
+                                    "points": "}bp_IaebpAjCk@HAjBa@BA|@Q|A[PEfAUn@Ox@Q~@SVGj@KHCx@QFAPE`AQFAzA[ZIpAYz@U"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5105886,
+                                    "lng": 13.2891977
+                                },
+                                "start_location": {
+                                    "lat": 52.5164712,
+                                    "lng": 13.2873702
+                                },
+                                "html_instructions": "Turn <b>left</b> onto <b>Sophie-Charlotten-Straße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "2.2 km",
+                                    "value": 2180
+                                },
+                                "duration": {
+                                    "text": "5 mins",
+                                    "value": 297
+                                },
+                                "maneuver": "turn-left",
+                                "polyline": {
+                                    "points": "e~n_IopbpADAb@EC{@EqAG_CG_CA_@?SAQCo@M}EAm@EwBIiCCo@IeDCeAMwEEsACgAWwIAS?QAK?I?QMgEEgACy@Ac@Cg@A_@Ag@IqCCe@QeGCkAASC}@CkAGcBEwBKaDOuFA[A[Aq@A{@Aa@AU?WA]A[Cs@Cq@A_@?WAUAYAUCs@MgEGeBOoFCy@A]A_AA_@GsBC_AKcEASG{BCy@Ai@KkDCu@E_BCaA?W?QBOBQH_@"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5123298,
+                                    "lng": 13.3209014
+                                },
+                                "start_location": {
+                                    "lat": 52.5105886,
+                                    "lng": 13.2891977
+                                },
+                                "html_instructions": "Turn <b>left</b> onto <b>Bundesstraße 5</b>/<wbr/><b>B2</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "2.0 km",
+                                    "value": 1976
+                                },
+                                "duration": {
+                                    "text": "4 mins",
+                                    "value": 243
+                                },
+                                "maneuver": "roundabout-right",
+                                "polyline": {
+                                    "points": "aio_IsvhpADEFGDGFIDIDKDKBKBKBQBS?Y@S?S?SAE?MCQCOAIAKEQEOAGAAEMEGAECCGIEGGEGEAAQc@CGAGACAECE?CCKACACAE?EAA?A?A?CAA?CAIEwAAOUgII_DCw@?AC{@?KEaB?KKgDOoFAg@AICs@?e@Ac@GyCAYAYAa@A]AWIkDIgCGiCCeAC]Ao@GwBAUAYC[Ak@EiAIeDAUAa@Cm@Ac@Cm@?WUeHKoDKkDEoACmAAM]kLYqJ?UE{ACk@EyAAc@EaBAY?Q?G@G@KBKBIPm@DW"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.514148,
+                                    "lng": 13.3492871
+                                },
+                                "start_location": {
+                                    "lat": 52.5123298,
+                                    "lng": 13.3209014
+                                },
+                                "html_instructions": "At the roundabout, take the <b>2nd</b> exit and stay on <b>Bundesstraße 5</b>/<wbr/><b>B2</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "1.9 km",
+                                    "value": 1901
+                                },
+                                "duration": {
+                                    "text": "3 mins",
+                                    "value": 197
+                                },
+                                "maneuver": "roundabout-right",
+                                "polyline": {
+                                    "points": "mto_IahnpATe@Ng@@MBK@M@M?M?O?M?MAKAI?KCKAICIAICICGCECGCECECECECCACAAAAAACAAAAAAAYy@ISCKCICKEOCWCYAYCa@Aw@G}BAWGuBCy@CiAa@_OA_@WmKGmBGmBUaJQ{GGoCQ{FGoCOuFMgFCsAAk@C_BCYCq@AOA]Co@Ai@AUCkAI{CIoCG{BEeB?UAWGaCCaAK_EEeBAe@"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5161515,
+                                    "lng": 13.3767369
+                                },
+                                "start_location": {
+                                    "lat": 52.514148,
+                                    "lng": 13.3492871
+                                },
+                                "html_instructions": "At <b>Großer Stern</b>, take the <b>2nd</b> exit and stay on <b>Bundesstraße 5</b>/<wbr/><b>B2</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.2 km",
+                                    "value": 196
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 42
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "}`p_IssspADAPM@CJOHUDKBK@G@E@?@G@EBG@ABC@CBCBCBABAHCFAB?D?H?J@D@T@rBNV?"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.51457569999999,
+                                    "lng": 13.3773594
+                                },
+                                "start_location": {
+                                    "lat": 52.5161515,
+                                    "lng": 13.3767369
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Ebertstraße</b>/<wbr/><b>B2</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.6 km",
+                                    "value": 598
+                                },
+                                "duration": {
+                                    "text": "2 mins",
+                                    "value": 102
+                                },
+                                "maneuver": "turn-left",
+                                "polyline": {
+                                    "points": "cwo_IowspA?YA_@GwBAu@Ce@Ac@A]AMASCOAOCOCYK{@CUAIIm@AMQuAQ{AIs@AWAUAUAWCeACqACy@A[Ce@?OEyAAM?OEwAKkDCu@C{A"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5154535,
+                                    "lng": 13.386041
+                                },
+                                "start_location": {
+                                    "lat": 52.51457569999999,
+                                    "lng": 13.3773594
+                                },
+                                "html_instructions": "Turn <b>left</b> onto <b>Behrenstraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.1 km",
+                                    "value": 140
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 43
+                                },
+                                "maneuver": "turn-left",
+                                "polyline": {
+                                    "points": "q|o_IwmupA[DK@U@QBMBI@M@K@c@DMBUBO@_@B"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.5167026,
+                                    "lng": 13.3858212
+                                },
+                                "start_location": {
+                                    "lat": 52.5154535,
+                                    "lng": 13.386041
+                                },
+                                "html_instructions": "Turn <b>left</b> onto <b>Glinkastraße</b>"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.2 km",
+                                    "value": 169
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 47
+                                },
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "kdp_IklupAMyFAi@GmBE_B"
+                                },
+                                "travel_mode": "DRIVING",
+                                "end_location": {
+                                    "lat": 52.51684909999999,
+                                    "lng": 13.3883085
+                                },
+                                "start_location": {
+                                    "lat": 52.5167026,
+                                    "lng": 13.3858212
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>Unter den Linden</b>/<wbr/><b>B2</b><div style=\"font-size:0.9em\">Continue to follow Unter den Linden</div><div style=\"font-size:0.9em\">Destination will be on the left</div>"
+                            }
+                        ],
+                        "distance": {
+                            "text": "8.0 km",
+                            "value": 8019
+                        },
+                        "duration": {
+                            "text": "19 mins",
+                            "value": 1145
+                        },
+                        "end_address": "virtuell - U Unter den Linden (West), 10117 Berlin, Germany",
+                        "end_location": {
+                            "lat": 52.51684909999999,
+                            "lng": 13.3883085
+                        },
+                        "via_waypoint": [],
+                        "start_address": "Christstraße 30, 14059 Berlin, Germany",
+                        "start_location": {
+                            "lat": 52.5166507,
+                            "lng": 13.2902082
+                        },
+                        "traffic_speed_entry": []
+                    }
+                ],
+                "bounds": {
+                    "northeast": {
+                        "lat": 52.5335839,
+                        "lng": 13.4413198
+                    },
+                    "southwest": {
+                        "lat": 52.5043673,
+                        "lng": 13.2873702
+                    }
+                },
+                "summary": "Bundesstraße 5/B2",
+                "warnings": [],
+                "copyrights": "Powered by Google, ©2025 Google",
+                "waypoint_order": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9
+                ],
+                "overview_polyline": {
+                    "points": "oin_IuyjpAqDoCcDcCw@hDwCxM}KqGgEtDcAoa@eDiqAfAiEGgBs@cBu@kBa@_IeEs_BcAy`@Y{KN{Cf@oApAo@vQrAfN`BzDWnAcAl@r@N~D`@d@fRlIy@xDRAd@wDz@`@pAp@o@dBgAxBu@l@}Ce@cDg@}Db@kHjAsNtC{HtDaJnAoF]eH{BiJoEoDo@eCv@yG~EwChDcAxDcAfBuB~@_FA_AkBm@sCsBwI{EmU{DyQmGa[yDkSoBsZuD}y@wDuVFmA~AuDpHjHn@h@tAfAuAgAo@i@gDcDiCgCZmBbDsJdH_Yb@IT^bBpAdE`Df@m@LaAj@sFRoAjCoNbGeO~CcL|@uCO}B}FwHeF}GsAqBGcBH{@GqAy@iJk@iJwATWCy@cAx@bAVBvAUoAiUaAoPm@{Mw@qCsDyGsArDoBxFe@pAoBgCe@y@b@iAc@hAqBqC@}@bDqI^aA`@cAT`@~ApC`AhBhC|E`DhGxA`UnC`f@tAlQMvF|L~QfBzBwChJeDvJk@vArAtAhAtAxJhM|JrPzJxVtHpPnCbJfCvKZdKr@vWG|Cj@tT^t@dBOpE_@dFc@rAMEoAEkBIaENlHDnAsALeFb@qE^kAHCgAKcEQaHOuEUeCe@_Q{@eTmLc^kN{]eFgKwA_CpAuDzBcGnAkDf@wAr@`Bs@aBl@_BxAdAnD~DfAbBxDtKjKjX`ByAt@L|NfQpJnOnDxHNx@Dd@z@Yv@EVDrAvApBfCzBzAjB|@t@vAz@h^x@z\\FjDGkDMqFWkIkAeh@@oB}CyBqBuAjEmQ|@qC~@cCeA}B{@eBiA{BcAiBkBcDmBgEu@qGH}GwCoOh@aLxEeYjAeH^qEgBkAwCiBvChBfBjA_@pEkAdHkBbLaChO}@dHNpAdChIj@~EAbGp@fF`J|Pz@dBdA|B_AbC}@pCOh@yC`MUhC|@lA^`MzAbp@wB`EaG|FyAhAiE\\GbCsAx@yIjD_Dl@}A`@LnETpI`BvOCxHoDUsAzA_@h@ObCjAvc@nC~dAhAxo@cA~DFjCtAtClCfs@pCtaApA`j@sAbEiDv[kSf_AaLxg@u@~DVbPTfJ}@Ji@JNhDdAI\\NT~ItC]`Cq@n@aDzCi@d@pSb@dQBl@jCk@tBc@`ASfFgAzGwAxJqBaBeo@qAqd@}CgiAaAic@lAsFyBmHsIy{CpAuHg@cDmAqC{Bou@cCk`Ai@}S]iNVy@f@sAXa@z@ChCPVYOsFUmDkA}Jw@qX_@uAa@Bw@JsANo@DOcHMmE"
+                }
+            }
+        ],
+        "status": "OK",
+        "geocoded_waypoints": [
+            {
+                "types": [
+                    "premise",
+                    "street_address"
+                ],
+                "place_id": "ChIJT4mTD_5QqEcRL0srGAIOAIw",
+                "geocoder_status": "OK"
+            },
+            {
+                "types": [
+                    "establishment",
+                    "local_government_office",
+                    "point_of_interest"
+                ],
+                "place_id": "ChIJY_sFTixRqEcRYpdH2IOEl9k",
+                "geocoder_status": "OK"
+            },
+            {
+                "types": [
+                    "beauty_salon",
+                    "establishment",
+                    "point_of_interest",
+                    "spa"
+                ],
+                "place_id": "ChIJR7Bp6eRRqEcRQO_P6TbQVcQ",
+                "geocoder_status": "OK"
+            },
+            {
+                "types": [
+                    "premise",
+                    "street_address"
+                ],
+                "place_id": "ChIJ1fsyJhBOqEcRsvbRh-bUkZk",
+                "geocoder_status": "OK"
+            },
+            {
+                "types": [
+                    "dentist",
+                    "establishment",
+                    "health",
+                    "point_of_interest"
+                ],
+                "place_id": "ChIJIbG-aQxOqEcRgGa9T_O5BVs",
+                "geocoder_status": "OK"
+            },
+            {
+                "types": [
+                    "cafe",
+                    "establishment",
+                    "food",
+                    "point_of_interest"
+                ],
+                "place_id": "ChIJl33YXtpRqEcRW10AZED3O5M",
+                "geocoder_status": "OK"
+            },
+            {
+                "types": [
+                    "premise",
+                    "street_address"
+                ],
+                "place_id": "ChIJNX3qOB9OqEcRXUJRaHw3Q6U",
+                "geocoder_status": "OK"
+            },
+            {
+                "types": [
+                    "art_gallery",
+                    "cafe",
+                    "establishment",
+                    "food",
+                    "point_of_interest",
+                    "store"
+                ],
+                "place_id": "ChIJv-2Gg9FRqEcRl05ETR8ZAWQ",
+                "geocoder_status": "OK"
+            },
+            {
+                "types": [
+                    "street_address",
+                    "subpremise"
+                ],
+                "place_id": "ChIJeR1j0jtOqEcRuKegQM8q-cA",
+                "geocoder_status": "OK"
+            },
+            {
+                "types": [
+                    "establishment",
+                    "point_of_interest"
+                ],
+                "place_id": "ChIJq8OpyrZRqEcRUiaCvXn1UEM",
+                "geocoder_status": "OK"
+            },
+            {
+                "types": [
+                    "street_address",
+                    "subpremise"
+                ],
+                "place_id": "ChIJVeapbilRqEcRerWTc21hK-c",
+                "geocoder_status": "OK"
+            },
+            {
+                "types": [
+                    "establishment",
+                    "point_of_interest"
+                ],
+                "place_id": "ChIJVcFiusRRqEcR5cIy8fN1CVk",
+                "geocoder_status": "OK"
+            }
+        ]
+    }
+}

@@ -36,6 +36,7 @@ const INTEREST_OPTIONS = [
 
 export default function TripPlannerPage({ user, setUser }) {
     // form state
+    const [openDay, setOpenDay] = useState(null);
     const [showInterestDropdown, setShowInterestDropdown] = useState(false);
     const [showTrips, setShowTrips] = useState(false);
     const [darkMode, setDarkMode] = useState(false);
@@ -506,20 +507,26 @@ export default function TripPlannerPage({ user, setUser }) {
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
 
-                    {validDays.map((d, i) => {
-                        const c = d.coords || d.coordinates;
-                        return (
-                            <Marker
-                                key={i}
-                                position={[c.lat, c.lng]}
-                            >
-                                <Popup>
-                                    <strong>Day {d.day || i + 1}</strong><br />
-                                    {d.description}
-                                </Popup>
-                            </Marker>
-                        );
-                    })}
+                    {plan?.days?.reduce((markers, day, dayIdx) => {
+                        ['morning', 'noon', 'evening'].forEach(slot => {
+                            const point = day[slot];
+                            if (point?.coords) {
+                                markers.push(
+                                    <Marker
+                                        key={`day-${dayIdx}-${slot}`}
+                                        position={[point.coords.lat, point.coords.lng]}
+                                    >
+                                        <Popup>
+                                            <strong>Day {dayIdx + 1} ({slot})</strong><br />
+                                            {point.place_name}<br />
+                                            {point.description}
+                                        </Popup>
+                                    </Marker>
+                                );
+                            }
+                        });
+                        return markers;
+                    }, [])}
 
                     {/* ✅ Big red trip route */}
                     {plan?.google_route?.routes?.[0] && (() => {
@@ -560,17 +567,70 @@ export default function TripPlannerPage({ user, setUser }) {
 
 
             {/* schedule & images */}
-            {plan?.days && (
-                <div className={`tp-schedule${darkMode ? " dark" : ""}`}>
-                    {plan.days.map((day, i) => (
-                        <div key={i} className="tp-day">
-                            <h2>Day {i + 1}</h2>
-                            <img src={day.image_url} alt={day.description} />
-                            <p>{day.description}</p>
+            {/* day cards */}
+            <div className="tp-day-cards">
+                {(plan?.days || []).map((day, i) => {
+                    const isOpen = openDay === i;
+
+                    // find the first slot in ["morning","noon","evening"] that has an image
+                    const previewSlotName = ["morning", "noon", "evening"].find(
+                        slot => day[slot]?.image_url
+                    );
+                    const preview = previewSlotName && day[previewSlotName];
+
+                    return (
+                        <div
+                            key={i}
+                            className={`tp-day-card${isOpen ? " open" : ""}`}
+                            onClick={() => setOpenDay(isOpen ? null : i)}
+                        >
+                            <header className="tp-day-card-header">
+                                <h2>Day {i + 1}</h2>
+                                <span>{isOpen ? "▲" : "▼"}</span>
+                            </header>
+
+                            {isOpen ? (
+                                <div className="tp-day-card-body">
+                                    {["morning", "noon", "evening"].map(slot => {
+                                        const point = day[slot];
+                                        if (!point) return null;
+                                        return (
+                                            <div key={slot} className="tp-day-slot">
+                                                <h3>{slot[0].toUpperCase() + slot.slice(1)}</h3>
+                                                {point.image_url ? (
+                                                    <img
+                                                        src={point.image_url}
+                                                        alt={point.description}
+                                                        style={{ maxWidth: "100%", height: "auto" }}
+                                                    />
+                                                ) : (
+                                                    <p><em>No image</em></p>
+                                                )}
+                                                <p>{point.description}</p>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                            ) : (
+                                <div className="tp-day-card-preview">
+                                    {preview ? (
+                                        <>
+                                            <img
+                                                src={preview.image_url}
+                                                alt={preview.description}
+                                                style={{ maxWidth: "100%", height: "auto" }}
+                                            />
+                                            <p>{preview.description}</p>
+                                        </>
+                                    ) : (
+                                        <div className="tp-no-image">No image</div>
+                                    )}
+                                </div>
+                            )}
                         </div>
-                    ))}
-                </div>
-            )}
+                    );
+                })}
+            </div>
 
         </div >
     );

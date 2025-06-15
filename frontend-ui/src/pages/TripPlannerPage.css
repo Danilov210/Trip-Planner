@@ -451,3 +451,62 @@ body.dark-mode,
     background: inherit;
     color: inherit;
 }
+
+
+.tp-day-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.tp-day-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: box-shadow .2s;
+}
+
+.tp-day-card:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+}
+
+.tp-day-card.open {
+    grid-column: span 2;
+}
+
+.tp-day-card-header {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    background: #f5f5f5;
+    font-weight: bold;
+}
+
+.tp-day-card-preview,
+.tp-day-card-body {
+    padding: 1rem;
+}
+
+.tp-day-card-preview img,
+.tp-day-slot img {
+    width: 100%;
+    /* fill the container’s width */
+    height: 150px;
+    /* pick a fixed height you like */
+    object-fit: cover;
+    /* crop/scale to fill without distortion */
+    object-position: center;
+    border-radius: 8px;
+    /* optional, to match your card corners */
+}
+
+.tp-day-slot {
+    margin-bottom: 1rem;
+}
+
+.tp-day-slot h3 {
+    margin: .5rem 0 .25rem;
+    font-size: 1.1rem;
+}
