@@ -172,11 +172,19 @@ export default function TripPlannerPage({ user, setUser }) {
             return date;
         }
     }
-    const validDays = plan?.days?.filter(d => d.coords?.lat != null) || [];
+    // accept either `coords` or old‐style `coordinates`
+    const validDays = plan?.days?.filter(d => {
+        const c = d.coords || d.coordinates;
+        return c && c.lat != null;
+    }) || [];
+
 
     // center on the first valid day (or fallback to world view)
     const center = validDays.length > 0
-        ? [validDays[0].coords.lat, validDays[0].coords.lng]
+        ? [
+            (validDays[0].coords || validDays[0].coordinates).lat,
+            (validDays[0].coords || validDays[0].coordinates).lng
+        ]
         : [20, 0];
 
     return (
@@ -498,22 +506,30 @@ export default function TripPlannerPage({ user, setUser }) {
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
 
-                    {validDays.map((d, i) => (
-                        <Marker
-                            key={i}
-                            position={[d.coords.lat, d.coords.lng]}
-                        >
-                            <Popup>
-                                <strong>Day {d.day || i + 1}</strong><br />
-                                {d.description}
-                            </Popup>
-                        </Marker>
-                    ))}
+                    {validDays.map((d, i) => {
+                        const c = d.coords || d.coordinates;
+                        return (
+                            <Marker
+                                key={i}
+                                position={[c.lat, c.lng]}
+                            >
+                                <Popup>
+                                    <strong>Day {d.day || i + 1}</strong><br />
+                                    {d.description}
+                                </Popup>
+                            </Marker>
+                        );
+                    })}
 
                     {/* ✅ Big red trip route */}
                     {plan?.google_route?.routes?.[0] && (() => {
-                        const steps = plan.google_route.routes[0].legs?.[0]?.steps || [];
-                        const decoded = steps.flatMap(step => polyline.decode(step.polyline.points));
+                        // collect _all_ steps from every leg
+                        const legs = plan.google_route.routes[0].legs || [];
+                        const allSteps = legs.flatMap(leg => leg.steps || []);
+                        const decoded = allSteps.flatMap(step =>
+                            polyline.decode(step.polyline.points)
+                        );
+
                         if (decoded.length > 1) {
                             return (
                                 <>

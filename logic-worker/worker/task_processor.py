@@ -31,11 +31,14 @@ def process_task(message: dict):
     prompt = (
         f"Plan a trip to {destination} from {start_date} to {end_date} "
         f"with interests: {interests_str}. "
-        "Return a JSON object with a `days` array; each day has `description`, "
-        "`coords` (lat/lng), and `image_url`. "
+        "Return a JSON object with a `days` array; each day has:\n"
+        "  • `description`: string (what you’ll do that day),\n"
+        "  • `place_name`: string (the specific location or attraction name),\n"
+        "  • `coords`: { lat: number, lng: number },\n"
+        "  • `image_url`: string (direct .jpg/.jpeg/.png link or empty string).\n"
         "For each `image_url`, ONLY use a direct link to a real, publicly accessible "
         "photo in .jpg, .jpeg, or .png format. Do NOT use example.com, placeholder.com, "
-        "upload.wikimedia.org, or any AI-generated or fake images. "
+        "upload.wikimedia.org, or any AI-generated/fake images. "
         "Do NOT use links that do not end with .jpg, .jpeg, or .png. "
         "If you cannot find a real image, leave `image_url` as an empty string."
     )
@@ -49,25 +52,46 @@ def process_task(message: dict):
     except json.JSONDecodeError as e:
         plan = {"error": "Invalid JSON from OpenAI", "details": str(e)}
 
-    # 3) Fetch a Google route (optional)
+    # 3) Fetch a Google route between your actual waypoints (optional)
     try:
-        plan["google_route"] = get_google_route(destination, destination)
-    except Exception:
+        wpts = plan.get("waypoints", [])
+        if len(wpts) >= 2:
+            origin = f"{wpts[0]['lat']},{wpts[0]['lng']}"
+            destination = f"{wpts[-1]['lat']},{wpts[-1]['lng']}"
+
+            # join any intermediate stops into the `waypoints` param:
+            intermediate = wpts[1:-1]
+            waypoints_param = (
+                "|".join(f"{w['lat']},{w['lng']}" for w in intermediate)
+                if intermediate
+                else None
+            )
+
+            plan["google_route"] = get_google_route(
+                origin, destination, waypoints=waypoints_param
+            )
+        else:
+            plan["google_route"] = None
+    except Exception as e:
+        print("Failed to fetch route:", e)
         plan["google_route"] = None
 
     # 4) Enrich days: replace any Wikimedia URL via Google Places Photos
     for day in plan.get("days", []):
         url = day.get("image_url", "")
+        # only try to replace if it's actually a Wikimedia URL
         if url.startswith("https://upload.wikimedia.org"):
-            # 1) extract “Black_Forest” or “Rhine_River” → “Black Forest” or “Rhine River”
-            m = re.search(r"/commons/\d+/\d+/([^\.]+)\.", url)
-            place_query = m.group(1).replace("_", " ") if m else destination
+            # use the explicit place_name (falls back to the trip destination)
+            place_query = day.get("place_name", destination)
             print(f"🔄 Replacing Wikimedia image for landmark `{place_query}`")
 
-            # 2) fetch a real photo URL
+            # fetch a real photo URL
             new_url = get_google_place_photo(place_query) or ""
             day["image_url"] = new_url
             print(f"   → got: {new_url}")
+        else:
+            # leave everything else untouched
+            print(f"ℹ️  Skipping non-Wikimedia URL: {url}")
 
     # 5) Persist to DB
     with psycopg2.connect(STATE_DB_URL) as conn:

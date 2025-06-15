@@ -31,17 +31,23 @@ def fetch_plan_from_openai(prompt: str) -> str:
     return resp.choices[0].message.content
 
 
-def get_google_route(start: str, end: str) -> dict:
+def get_google_route(origin: str, destination: str, waypoints: str = None) -> dict:
     """
-    Fetch a driving route between `start` and `end` from Google Maps Directions API.
-    Expects GOOGLE_MAPS_API_KEY in env.
+    Fetch a driving route from `origin` to `destination`, optionally through
+    a pipe-separated list of `waypoints` (e.g. "lat1,lng1|lat2,lng2").
     """
     key = os.getenv("GOOGLE_MAPS_API_KEY")
     url = "https://maps.googleapis.com/maps/api/directions/json"
-    params = {"origin": start, "destination": end, "key": key}
-    r = requests.get(url, params=params)
-    r.raise_for_status()
-    return r.json()
+    params = {
+        "origin": origin,
+        "destination": destination,
+        "key": key,
+    }
+    if waypoints:
+        params["waypoints"] = waypoints
+    resp = requests.get(url, params=params)
+    resp.raise_for_status()
+    return resp.json()
 
 
 def find_place_photo_reference(place_name: str) -> str | None:
